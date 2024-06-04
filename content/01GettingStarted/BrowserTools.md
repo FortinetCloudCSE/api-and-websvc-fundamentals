@@ -1,6 +1,6 @@
 ---
-title: "Task 3 - Run Container"
-menuTitle: "Run Container"
+title: "Task 3 - Browser Based Developer Tools"
+menuTitle: "Browser Tools"
 weight: 5
 ---
 

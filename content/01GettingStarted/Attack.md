@@ -1,6 +1,6 @@
 ---
-title: "Background Procedures - CentralRepo Maintenance"
-menuTitle: "FYI - Central Repo"
+title: "Saved Cross Site Scripting (XSS) Attack"
+menuTitle: "Attack"
 weight: 20
 ---
 

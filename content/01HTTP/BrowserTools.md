@@ -4,100 +4,74 @@ menuTitle: "Browser Tools"
 weight: 5
 ---
 
-## Task 3: Run FortinetHugo container 
+## Open Firefox and Developer Tools
 
-- Run the container with local disk mounts so you can review your markdown TECWorkshop Guide as you're creating the content (repeat this procedure for any TECWorkshop you're creating)
+For this exercise, we will take a high level look at the Web Developer tool in Firefox.  For more information about this tool, you can go to the [Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/)
 
-{{% notice style="tip" title="Tip: Simple container run" %}} 
-We've included a super simple shell script to run your container image with arguments 
-```shell
-    ./scripts/docker_run.sh server
+- Open Firefox from the top left menu bar and navigate to **http://localhost:8000/**
+- Right click anywhere on the screen, which will cause a menu to pop up.  At the bottom of that menu, click on **Inspect(Q)**
+  - This will cause "Web Developer Tools" to open at the bottom of the screen.  
+
+
+## Dig a bit deeper
+
+### Inspector
+
+The inspector tab shows the HTML used to render this page.  Take a look at the code and expand some of the menus.
+
+- Scroll down and **right click** on the link "To hear what other have to say".  Select **Inspect(Q)**.  This will highlight the code associated with this line.
+
+![Click Here](click_here.png)
+
+
+- We can see that this is a href (hypertext reference).  this tells us the source of the file used in this tag.  
+- Open your terminal and input:
+
 ```
-Choose your CLI argument depending on what you want Hugo to do:
-- 'server' argument to run Hugo's interactive web server
-- 'shell' to access the container CLI
-- 'build' to perform a Hugo build 
-{{% /notice %}}
+more simple_flask_auth/templates/view_feedback.html
 
-  {{% notice style="tip" title="Full Container run command" %}}
+```
 
-  ```shell
-  docker run --rm -it -v $(pwd)/content/:/home/CentralRepo/content -v $(pwd)/config.toml:/home/CentralRepo/config.toml -v $(pwd)/docs:/home/CentralRepo/public -v $(pwd)/layouts:/home/UserRepo/layouts -p 1313:1313 fortinet-hugo:latest shell
-  ```
-  {{% /notice %}}
+- You should see something like:
 
-   - '-rm' flag removes the container after it exits...freeing up resources
-   - '-it' flag runs the container interactively providing prompt into the Container
-   - '-v' flag creates a disk mount to the local file system available within the container OS
-   - '-p' publishes container ports to the local OS (used to view the local Hugo Webserver)
-   - CLI Options:
-     - 'shell' subcommand for Hugo container to access the shell directly
-     - 'server' subcommand for Hugo container to run the local/test webserver
-     - 'build' subcommand for Hugo container to build the static website, **this is the default**  
+![More View](more_view.png)
+
+- Now, left click on the link to go to the page.  Compare the html to the the outputs on the rendered page.
+
+
+### Network Inspector
+
+The network tab gives us a lot of information about traffic to and from the appliation itself.  This can be quite useful for viewing how the application is actually operating at layer 7.
+
+- Click on The "Network" tab in the Web Devloper Tool section at the bottom of the page.
+
+![Net Tab](net_tab.png)
+
+- At a glance, we can see the HTTP status code, method and domain.
+  - Notice here that much of the network traffic displayed is not from "localhost".  As we can see a lot of the traffic is from, or related to giphy.com.  This is due to the embdded link, which ultimately renders the fun Kitty GIF.
+- By default, the **All** option is selected. The other options to the right, are high level category filters.
+  - Select the **Images** filter.
+  - In the "Filter URLs" bar, type **giphy**
+  - Hover over the "File" section of one of the "media1.giphy.com" lines.
+
+
+### Storage Inspector
+
+On the left hand side of this screen is the "Storage tree", which lists all of the storage types that can be inspected.  Objects under each type are organized by origin.  In our output, we only have two origins (http://localhost:8000 and https://giphy.com)
+
+- Expand the **Cookies** storage type.  Note that our two origins are there, but we cannot see any cookies.
+
+![No Cook](no_cook.png)
+
+- Back on the web page (http://localhost:8000/view_feedback), click the link below the GIF to give feedback.
+  - Enter the Username (student) and Password (Fortinet1!) and select **Sign In**
+  - Type a name and some feedback into the appropriate boxes and click **Submit**
   
-- the 'shell argument runs the container and logs you into the container [Alpine Linux OS CLI](https://github.com/klakegg/docker-hugo/tree/master) (general Linux commands will work, but this is a lean image so doesn't include everything)
-  - Note the $(pwd) in Container OS, and list files.  You'll see you have everything needed to create your Hugo site! 
-  
-    ```shell
-    pwd
-    ls -la 
-    ```
-{{% notice note %}} Notice the folders from your local repo are available in the container, from the disk mounts
-- /content
-- /docs --> /public (hugo builds to public by default, but GitHub pages wants to use /docs by default)
-- /layouts
-- config.toml
+- Back on the Storage tree, expand the Cookies Section and you will notice that you now have a cooked with a key/value of "name/whatever name you entered" in the "Table Widget" to the right of the Storage Tree
 
-These disk mounts allow bidirectional read/write between container and local file system, and these disk mounts are the only directories that will be maintained when the container shuts down
-{{% /notice %}}
+- Click on the new cookie.  You will notice a new "Sidebar" pop up to the right of the Table Widget.  This contains more detailed information about the cookie.
 
-- Within the container shell, you can Run Hugo virtual server to get a live view of Hugo's output 
-
-  ```
-  hugo server --bind 0.0.0.0
-  ```
-  In your local machine, browse to http://localhost:1313/UserRepo
-
-  You'll see a template hugo site served by Hugo's local webserver.  Now you're ready to proceed building your [TECWorkshop content](../02hugo.html) in the next chapter!
-
-- To exit out of the Container OS: use 'exit' or **CTRL+d**
-
-  ```shell
-  exit
-  ```
-
----
-
-{{% notice tip %}} We're including some helpful docker commands here for reference.  Use these if you've built LOTS of images and you need to get rid of the mess
-{{% /notice  %}}
+![Yes Cook](yes_cook.png)
 
 
-
-### Notes:
-- Inside the container, [Central Repo](https://github.com/FortinetCloudCSE/CentralRepo) (which is where we'll make any template changes) is cloned and integrated with your repo.
-- Container (ideally) displays local version of Hugo site updating near real time as you create content
-- To run a container interactively (for troubleshooting or to see how they function)
-  - Comment out any offending lines in the dockerfile
-  - Build again using commands above.
-  - to run the container interactively use the '-it' flag:
-
-  ```shell
-    docker run --rm -it fortinet-hugo:latest
-  ```
-
-- Container outputs /public folder which is the result from "Hugo build"
-  - This /public(/docs) folder can be hosted anywhere.  We'll still use GH Pages to host the actual page.
-
-### Useful Docker Commands to Know
-```
-docker images                                           #List all images
-docker ps -a                                            #List all containers, both running and stopped
-docker rmi <image-id>                                   #Remove an image
-docker rmi $(docker images -aq)                         #Remove all images
-docker rmi $(docker images -filter dangling=true -aq)   #Remove all images with tag <none>
-docker rm <container-id>                                #Remove a container
-docker rm $(docker ps -aq)                              #Remove all containers
-docker builder prune                                    #Remove build cache
-```
-When running any of the above commands, if you get an error message indicating an image or container is being used or referenced in another image or container, you can issue the '-f' flag to force remove.
 

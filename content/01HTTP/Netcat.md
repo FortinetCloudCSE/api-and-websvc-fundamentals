@@ -12,6 +12,10 @@ We will be using cetcat to craft http calls to our flask application.  These wil
 
 {{% notice info %}} When making the below calls, you will not want to try and paste them in all at once.  Please enter the commands **one line at a time**. {{% /notice %}}
 
+- Let's break down this call.  
+  - The first line indicates the tool ("nc" for netcat), the target host (localhost) and the port (8000) the "-vvv" just indicates that we want the verbose output.
+  - For the second line, we are using the **GET** method and we are sending it to  
+
 ```
 nc localhost 8000 -vvv
 GET /hello HTTP/1.1

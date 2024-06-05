@@ -31,8 +31,8 @@ password: FortinetKali1!
 
 ```
 source .venv/bin/activate
-
-python3 simple_flask_auth/Simple_App.py
+cd simple_flask_auth
+python3 app.py
 ```
 - You should see that the flask application has successfully started and is listening on port 8000.
 

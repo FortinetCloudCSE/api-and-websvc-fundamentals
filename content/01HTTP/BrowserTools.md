@@ -4,9 +4,15 @@ menuTitle: "Browser Tools"
 weight: 5
 ---
 
+For this exercise, we will take a high level look at the Web Developer tool in Firefox.  For more information about this tool, you can go to the [Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/).  
+
+Almost all browsers have developer toolkits.  Below are some notable examples:
+- [Google Detools Docs](https://developer.chrome.com/docs/devtools)
+- [Microsoft Edge Devtools Docs](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/landing/)
+
+
 ## Open Firefox and Developer Tools
 
-For this exercise, we will take a high level look at the Web Developer tool in Firefox.  For more information about this tool, you can go to the [Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/)
 
 - Open Firefox from the top left menu bar and navigate to **http://localhost:8000/**
 - Right click anywhere on the screen, which will cause a menu to pop up.  At the bottom of that menu, click on **Inspect(Q)**

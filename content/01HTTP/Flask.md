@@ -39,4 +39,4 @@ python3 app.py
 ![Flask Start](flask_start.png)
 
 {{% notice info %}} If you would like to take a look at the Flask Application itself, you can use 
-```cat simple_flask_auth/Simple_App.py``` or navigate to this [Github Repo.](https://github.com/fortidg/simple_flask_auth) {{% /notice %}}
+```cat simple_flask_auth/app.py``` or navigate to this [Github Repo.](https://github.com/fortidg/simple_flask_auth) {{% /notice %}}

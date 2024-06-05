@@ -29,9 +29,14 @@ Now that we have established the fact that we can leave feedback, let's use that
 
 - Navigate back to **http://localhost:8000/view_feedback** and note that your feed back was recorded.
 
-- You should see the below message:
+<details>
+<summary><h5><b>Click here for example</b></h5></summary>
+  
+  ![Cordimungus](cordimungus.png)
 
-![Cordimungus](cordimungus.png)
+</details>
+
+
 
 
 

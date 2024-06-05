@@ -9,26 +9,42 @@ weight: 5
 We will be using cetcat to craft http calls to our flask application.  These will all be made against "localhost", but it could just as easily use a public URL.
 
 ## Make your first call
+For this first example, we want to use Wireshark to watch the interaction between netcat and the server.
 
-{{% notice info %}} When making the below calls, you will not want to try and paste them in all at once.  Please enter the commands **one line at a time**. {{% /notice %}}
+- In wireshark, select **Loopback:lo** as the interface and enter ```host 127.0.0.0 and port 8000``` into the capture filter
 
-- Let's break down this call.  
-  - The first line indicates the tool ("nc" for netcat), the target host (localhost) and the port (8000) the "-vvv" just indicates that we want the verbose output.
-  - For the second line, we are using the **GET** method and we are sending it to  
+![Shark start](shark_start.png)
+
+
+- Back in our Terminal, let's start the tcp connection
 
 ```
 nc localhost 8000 -vvv
+```
+
+- The resulting Wirshark capture should show us the TCP three-way handshake
+
+![TCP HS](tcp-hs.png)
+
+- Now let's finish the call by adding L7 comonents 
+
+{{% notice info %}} When making the below calls, you will not want to try and paste them in all at once.  Please enter the commands **one line at a time**. {{% /notice %}}
+
+```
 GET /hello HTTP/1.1
 <hit enter again>
 ```
 
 - You should see some response headers returned as well as the programmed response from the app. We can see the **200 OK** status, meaning that our application is actually working and we called a valid resource.
-<details>
-<summary><h5><b>Click here for example</b></h5></summary>
-  
+
   ![GET Hello](nc_get_hello.png)
 
-</details>
+
+- Now we can look back at Wireshark and see the rest of the traffic associated with this call.
+
+![http ws](http-ws.png)
+
+{{% notice info %}} We can see the underlying HTTP in this Wireshark capture because we are not using Secure HTTP (TLS or Quic) If this traffic were encrypted using TLS, we would only see TCP and TLS {{% /notice %}}
 
 {{% notice tip %}}
 We also get some other useful information about the application, including the Application server software as well as the python version used.  Generally speaking the less information potential attackers have about your application, the better.  If this information is exposed, it is imperitive to ensure that servers are appropriately patched.
@@ -41,6 +57,7 @@ We also get some other useful information about the application, including the A
 ## Method Not Allowed
 
 - In our first call above, we used the **GET** method against http://localhost:8000/hello.  Let's try the same thing against a different URL
+
 
 ```
 nc localhost 8000 -vvv

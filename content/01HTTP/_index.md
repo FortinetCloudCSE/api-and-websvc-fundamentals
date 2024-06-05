@@ -32,9 +32,30 @@ https://<kali-IP>
 
 ![Kali RDP](kali_rdp.png)
 
-- Note the icons at the top left of the screen.  We will be using these during the lab.
+- Note the icons at the top left of the home screen.  We will be using these during the lab.
 
 ![Kali Home](kali_home.png)
+
+### Paste text into Kali Desktop
+
+There are portions of this lab that will require large amounts of text to be entered on the Kali desktop. To accomplish this:
+- You will need to open (and close) the Guacamole menu by typing **ctrl+alt+shift+** for Windows or **ctrl+command+shift** for MAC. 
+- Paste your text into the window, and select **Text input** as the Input method.
+
+![CP Paste](cp_paste.png)
+
+- Right click on the desktop where you want to past and click "paste" or "paste from clipboard" depending on which option is available.
+
+### Open Wireshark
+
+- Click on the **Applications** icon at the top right of the Kali home screen.  Search for "wireshark" and open the application.
+![Find shark](find_shark.png)
+  - You will be asked to Authenticate.  
+  ![Shark Auth](shark_auth.png)
+  - You will input the aureuser password ```FortinetKali1!``` and click **Authenticate**
+  
+
+
 
 
 

@@ -87,7 +87,7 @@ enableEmoji = true
   #logoBannerText="Custom Logo Banner"
 
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
-  logoBannerSubText="sample sub-banner text"
+  logoBannerSubText="API and Web Service Fundamentals"
 
 
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
@@ -165,13 +165,13 @@ url = "https://github.com/FortinetCloudCSE"
 weight = 1
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>Fortinet Standard Workshop Guide"
-url = "https://fortinetcloudcse.github.io/UserRepo"
+name = "<i class='fas fa-tools'></i>OWASP"
+url = "https://owasp.org/"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>Fortinet Standard Workshop Template Repo"
-url = "https://github.com/FortinetCloudCSE/UserRepo"
+name = "<i class='fas fa-tools'></i>W3Schools"
+url = "https://www.w3schools.com/"
 weight = 21
 
 [[menu.shortcuts]]

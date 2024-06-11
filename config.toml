@@ -170,41 +170,41 @@ url = "https://owasp.org/API-Security/editions/2023/en/0x00-header/"
 weight = 2
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>W3Schools"
+name = "<i class='fas fa-graduation-cap'></i> W3Schools"
 url = "https://www.w3schools.com/"
 weight = 3
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>Swagger API Documentation"
+name = "<i class='fas fa-graduation-cap'></i> Swagger API Documentation"
 url = "https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/"
 weight = 4
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>HTTP Authentication"
+name = "<i class='fas fa-graduation-cap'></i> HTTP Authentication"
 url = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication"
 weight = 5
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>API Authentication"
+name = "<i class='fas fa-graduation-cap'></i> API Authentication"
 url = "https://www.postman.com/api-platform/api-authentication/"
 weight = 6
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>Portswigger Security Academy"
+name = "<i class='fas fa-graduation-cap'></i> Portswigger Security Academy"
 url = "https://portswigger.net/web-security"
 weight = 7
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>Wireshark"
+name = "<i class='fas fa-tools'></i> Wireshark"
 url = "https://www.wireshark.org/"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>BurpSuite"
+name = "<i class='fas fa-tools'></i> BurpSuite"
 url = "https://portswigger.net/burp"
 weight = 12
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>Postman"
+name = "<i class='fas fa-tools'></i> Postman"
 url = "https://www.postman.com/"
 weight = 13

@@ -1,6 +1,6 @@
 ---
-title: "Task 1 - Start Flask"
-menuTitle: "Start Flask Application"
+title: "Task 1 - Start Flask Application"
+menuTitle: "Task 1 - Start Flask Application"
 weight: 1
 ---
 **According to Google AI:** Flask is a web development framework written in Python that helps developers build web applications. It's a microframework, which means it doesn't rely on specific tools or libraries, and it's considered a good choice for developers who are already familiar with Python. Flask's minimalistic design gives developers more control over their applications' structure, and it includes features like templating, database integration, and routing.

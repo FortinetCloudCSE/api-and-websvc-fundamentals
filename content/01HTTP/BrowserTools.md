@@ -1,6 +1,6 @@
 ---
 title: "Task 3 - Browser Based Developer Tools"
-menuTitle: "Browser Tools"
+menuTitle: "Task 3 - Tool: Browser Developer Tools"
 weight: 5
 ---
 

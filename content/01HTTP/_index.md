@@ -1,6 +1,6 @@
 ---
-title: "Ch 1 HTTP Fundamentals"
-menuTitle: "Ch 1: HTTP Fundamentals"
+title: "Module 1: HTTP Fundamentals"
+menuTitle: "Module 1: HTTP Fundamentals"
 weight: 10
 ---
 

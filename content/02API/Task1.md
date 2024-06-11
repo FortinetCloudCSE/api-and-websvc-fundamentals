@@ -1,6 +1,6 @@
 ---
 title: "Task 1 - Basic interaction with API"
-menuTitle: "Basic interaction with API"
+menuTitle: "Task 1 - Basic interaction with API"
 weight: 1
 ---
 In this lab, we will using the Postman application to interact with a simple API. 

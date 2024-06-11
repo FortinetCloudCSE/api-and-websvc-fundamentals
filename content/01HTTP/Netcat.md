@@ -1,6 +1,6 @@
 ---
 title: "Task 2 - Use Netcat to interact with Application"
-menuTitle: "Netcat"
+menuTitle: "Task 2 - Tool: Netcat"
 weight: 5
 ---
 

@@ -1,12 +1,7 @@
 ---
-title: "Ch 3 - Hugo Publish "
+title: "Module 3: Architecture of Modern HTTP-Based Applications"
 chapter: false
-menuTitle: "Ch 3: Publish"
+menuTitle: "Module 3: Architecture of Modern HTTP-Based Applications"
 weight: 30
 ---
 
-### ***Publish your content to GitHub pages via a GitHub action***
-
-Now that you have your content first draft, push your repo to github, there's already a GitHub action to automatically publish your content anytime you upload to the repo
-
-Click the right arrow to go through each step individually

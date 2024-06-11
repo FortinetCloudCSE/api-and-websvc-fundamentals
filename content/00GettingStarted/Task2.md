@@ -20,7 +20,7 @@ cd api-and-websvc-fundamentals/terraform
 terraform init
 ```
 
-![lab11](../../images/terraform1.png)
+![lab11](../images/terraform1.png)
 
     
 4. Run the following command to apply it
@@ -41,15 +41,15 @@ terraform apply  -var='username=web31' --auto-approve
     {{% /notice %}} 
 
 
-![lab12](../../images/terraform2.png)
+![lab12](../images/terraform2.png)
     
 5. Terraform deployment takes atleast 10-15 min to complete.
 
-![lab13](../../images/terraformoutput.png)
+![lab13](../images/terraformoutput.png)
 
 6. Once Terraform is complete you should see the output. Please copy the output to notepad.
 
-![output](output.png)
+![output](../images/output.png)
 
 7. To print the node VM's login password, you can run this command 
 
@@ -57,4 +57,4 @@ terraform apply  -var='username=web31' --auto-approve
    terraform output -raw linuxvm_password
    ```
 
-![](linux_passwd.png)
+![](../images/linux_passwd.png)

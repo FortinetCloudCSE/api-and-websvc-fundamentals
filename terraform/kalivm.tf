@@ -66,10 +66,14 @@ resource "azurerm_network_security_group" "kali-nsg" {
   }
 }
 
+resource "azurerm_network_interface_security_group_association" "nsg-association" {
+  network_interface_id      = azurerm_network_interface.nic.id
+  network_security_group_id = azurerm_network_security_group.kali-nsg.id
+}
 
 
 resource "azurerm_linux_virtual_machine" "kalivm" {
-  name                  = "node-${var.username}"
+  name                  = "kali-${var.username}"
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   location              = data.azurerm_resource_group.resourcegroup.location
   size                  = "Standard_B2s"
@@ -77,11 +81,18 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   admin_password        = "AdminPassword1234!"
   disable_password_authentication = false
 
-  network_interface_ids = azurerm_network_interface.nic.id
+  network_interface_ids = [azurerm_network_interface.nic.id]
 
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
+  }
+
+
+  plan {
+    publisher = "kali-linux"
+    name      = "kali-2023-3"
+    product   = "kali"
   }
 
   source_image_reference {
@@ -90,9 +101,8 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
     sku       = "kali-2023-3"
     version   = "latest"
   }
+
 }
-
-
 
 resource "null_resource" "kali" {
   connection {
@@ -101,6 +111,7 @@ resource "null_resource" "kali" {
     password = var.admin_password
     host     = resource.azurerm_public_ip.kalipip.ip_address
   }
+
   provisioner "remote-exec" {
     inline = [
   "sudo apt-get update",
@@ -113,6 +124,9 @@ resource "null_resource" "kali" {
   "sudo systemctl enable xrdp",
   "sudo systemctl enable xrdp-sesman",
   "sudo systemctl reboot",
-    ]
+]
   }
+  depends_on = [
+    azurerm_linux_virtual_machine.kalivm
+  ]
 }

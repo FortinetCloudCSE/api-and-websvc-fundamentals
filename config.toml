@@ -159,27 +159,52 @@ enableEmoji = true
   # For external links you can define how they are opened in your browser; this setting will only be applied to the content area but not the shortcut menu
   externalLinkTarget = "_blank"
 
-[[menu.shortcuts]] 
-name = "<i class='fas fa-graduation-cap'></i> Fortinet Cloud CSE GitHub Org"
-url = "https://github.com/FortinetCloudCSE"
+[[menu.shortcuts]]
+name = "<i class='fas fa-graduation-cap'></i> OWASP Top 10 "
+url = "https://owasp.org/www-project-top-ten"
 weight = 1
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>OWASP"
-url = "https://owasp.org/"
-weight = 11
+name = "<i class='fas fa-graduation-cap'></i> OWASP API Security Top 10 "
+url = "https://owasp.org/API-Security/editions/2023/en/0x00-header/"
+weight = 2
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tools'></i>W3Schools"
 url = "https://www.w3schools.com/"
-weight = 21
+weight = 3
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> Hugo reLearn theme - Guide"
-url = "https://mcshelby.github.io/hugo-theme-relearn/index.html"
-weight = 35
+name = "<i class='fas fa-tools'></i>Swagger API Documentation"
+url = "https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/"
+weight = 4
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-graduation-cap'></i> AWS Sample Workshop"
-url = "https://aws-samples.github.io/aws-modernization-workshop-sample/"
-weight = 50
+name = "<i class='fas fa-tools'></i>HTTP Authentication"
+url = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication"
+weight = 5
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>API Authentication"
+url = "https://www.postman.com/api-platform/api-authentication/"
+weight = 6
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>Portswigger Security Academy"
+url = "https://portswigger.net/web-security"
+weight = 7
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>Wireshark"
+url = "https://www.wireshark.org/"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>BurpSuite"
+url = "https://portswigger.net/burp"
+weight = 12
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>Postman"
+url = "https://www.postman.com/"
+weight = 13

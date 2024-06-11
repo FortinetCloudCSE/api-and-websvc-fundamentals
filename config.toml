@@ -1,7 +1,7 @@
 # this is a required setting for this theme to appear on https://themes.gohugo.io/
 # change this to a value appropriate for you; if your site is served from a subdirectory
 # set it like "https://example.com/mysite/"
-baseURL = "https://fortinetcloudcse.github.io/UserRepo/"
+baseURL = "https://fortinetcloudcse.github.io/api-and-websvc-fundamentals"
 googleAnalytics = "G-5RZBH288ST"
 
 languageCode = "en-US"
@@ -28,7 +28,7 @@ uglyURLs = true     # true -> basic/index.html -> basic.html
 # use this theme ;-)
 theme = ["hugo-theme-relearn"]
 
-title = "Hugo for Fortinet TECWorkshops"
+title = "API and Web service fundamentals workshop"
 
 # We disable this for testing the exampleSite; you must do so too
 # if you want to use the themes parameter disableGeneratorVersion=true;
@@ -95,9 +95,9 @@ enableEmoji = true
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "Jeff Kopko"
+  author = "Anonymous"
   # Description of the site, will be used in meta information
-  description = "Hugo for Fortinet TEC Workshops"
+  description = "API AND WEB SERVICE FUNDAMENTALS TEC Workshops"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar

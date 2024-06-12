@@ -42,28 +42,27 @@ resource "azurerm_network_security_group" "kali-nsg" {
   resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   security_rule {
-    name                       = "3389"
-    priority                   = 100
+    name                       = "allowssh"
+    priority                   = 101
     direction                  = "Inbound"
     access                     = "Allow"
-    protocol                   = "Tcp"
-    source_port_range          = "3389"
+    protocol                   = "*"
+    source_port_range          = "*"
+    destination_port_range     = "22"
+    source_address_prefix      = "*"
+    destination_address_prefix = "*"
+  } 
+  security_rule {
+    name                       = "allowrdp"
+    priority                   = 101
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "*"
+    source_port_range          = "*"
     destination_port_range     = "3389"
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   } 
-
-  security_rule {
-    name                       = "22"
-    priority                   = 101
-    direction                  = "Inbound"
-    access                     = "Allow"
-    protocol                   = "Tcp"
-    source_port_range          = "22"
-    destination_port_range     = "22"
-    source_address_prefix      = "*"
-    destination_address_prefix = "*"
-  }
 }
 
 resource "azurerm_network_interface_security_group_association" "nsg-association" {
@@ -77,9 +76,9 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   location              = data.azurerm_resource_group.resourcegroup.location
   size                  = "Standard_B2s"
-  admin_username        = "ubuntu"
+  admin_username        = "kaliadmin"
   admin_password        = "AdminPassword1234!"
-  disable_password_authentication = false
+  disable_password_authentication = falses
 
   network_interface_ids = [azurerm_network_interface.nic.id]
 
@@ -115,8 +114,8 @@ resource "null_resource" "kali" {
   provisioner "remote-exec" {
     inline = [
   "sudo apt-get update",
-  "sudo apt install kali-desktop-gnome -y",
-  "sudo apt-get install xrdp -y",
+  "sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install kali-desktop-gnome",
+  "sudo apt-get install xrdp -qy",
   "sudo systemctl start xrdp",
   "sudo systemctl start xrdp-sesman",
   "sudo systemctl start xrdp",

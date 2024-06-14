@@ -42,24 +42,24 @@ resource "azurerm_network_security_group" "kali-nsg" {
   resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   security_rule {
-    name                       = "allowssh"
+    name                       = "allow-ssh-inbound"
     priority                   = 101
     direction                  = "Inbound"
     access                     = "Allow"
-    protocol                   = "*"
+    protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "22"
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   } 
   security_rule {
-    name                       = "allowrdp"
-    priority                   = 101
+    name                       = "allow-alt-https-inbound"
+    priority                   = 102
     direction                  = "Inbound"
     access                     = "Allow"
-    protocol                   = "*"
+    protocol                   = "Tcp"
     source_port_range          = "*"
-    destination_port_range     = "3389"
+    destination_port_range     = "8443"
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   } 
@@ -70,15 +70,15 @@ resource "azurerm_network_interface_security_group_association" "nsg-association
   network_security_group_id = azurerm_network_security_group.kali-nsg.id
 }
 
-
 resource "azurerm_linux_virtual_machine" "kalivm" {
   name                  = "kali-${var.username}"
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   location              = data.azurerm_resource_group.resourcegroup.location
-  size                  = "Standard_B2s"
-  admin_username        = "kaliadmin"
-  admin_password        = "AdminPassword1234!"
-  disable_password_authentication = falses
+  size                  = var.vm_size
+  admin_username        = var.admin_username
+  admin_password        = var.admin_password
+  disable_password_authentication = false
+  custom_data = filebase64("${path.module}/boostrap.txt")
 
   network_interface_ids = [azurerm_network_interface.nic.id]
 
@@ -87,45 +87,16 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
     storage_account_type = "Standard_LRS"
   }
 
-
   plan {
-    publisher = "kali-linux"
-    name      = "kali-2023-3"
-    product   = "kali"
+    publisher = var.publisher
+    name      = var.sku
+    product   = var.offer
   }
-
   source_image_reference {
-    publisher = "kali-linux"
-    offer     = "kali"
-    sku       = "kali-2023-3"
-    version   = "latest"
+    publisher = var.publisher
+    offer     = var.offer
+    sku       = var.sku
+    version   = var.vmversion
   }
 
-}
-
-resource "null_resource" "kali" {
-  connection {
-    type     = "ssh"
-    user     = var.admin_username
-    password = var.admin_password
-    host     = resource.azurerm_public_ip.kalipip.ip_address
-  }
-
-  provisioner "remote-exec" {
-    inline = [
-  "sudo apt-get update",
-  "sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install kali-desktop-gnome",
-  "sudo apt-get install xrdp -qy",
-  "sudo systemctl start xrdp",
-  "sudo systemctl start xrdp-sesman",
-  "sudo systemctl start xrdp",
-  "sudo systemctl start xrdp-sesman",
-  "sudo systemctl enable xrdp",
-  "sudo systemctl enable xrdp-sesman",
-  "sudo systemctl reboot",
-]
-  }
-  depends_on = [
-    azurerm_linux_virtual_machine.kalivm
-  ]
 }

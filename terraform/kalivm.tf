@@ -76,9 +76,9 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   location              = data.azurerm_resource_group.resourcegroup.location
   size                  = "Standard_B2s"
-  admin_username        = "kaliadmin"
-  admin_password        = "AdminPassword1234!"
-  disable_password_authentication = falses
+  admin_username        = var.admin_username
+  admin_password        = var.admin_password
+  disable_password_authentication = false
 
   network_interface_ids = [azurerm_network_interface.nic.id]
 

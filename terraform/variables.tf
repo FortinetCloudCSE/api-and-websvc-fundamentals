@@ -4,10 +4,10 @@ variable "username" {
 
 variable "admin_username"{
     type    = string
-    default = "ubuntu"
+    default = "labuser"
 }
 
 variable "admin_password"{
     type    = string
-    default = "AdminPassword1234!"
+    default = "S3cur3P4ssw0rd123!"
 }

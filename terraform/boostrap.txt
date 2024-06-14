@@ -8,3 +8,6 @@ packages:
 runcmd:
   - systemctl enable xrdp
   - systemctl restart xrdp
+  - touch /home/labuser/.hushlogin
+  - git clone --depth=1 https://github.com/boschkundendienst/guacamole-docker-compose /opt/guacamole
+  - cd /opt/guacamole && zsh ./prepare.sh && docker-compose up -d

@@ -70,11 +70,6 @@ resource "azurerm_network_interface_security_group_association" "nsg-association
   network_security_group_id = azurerm_network_security_group.kali-nsg.id
 }
 
-# Data template Bash bootstrapping file
-data "template_file" "linux-vm-cloud-init" {
-  template = file("boostrap.tftpl")
-}
-
 resource "azurerm_linux_virtual_machine" "kalivm" {
   name                  = "kali-${var.username}"
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
@@ -83,7 +78,7 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   admin_username        = var.admin_username
   admin_password        = var.admin_password
   disable_password_authentication = false
-  custom_data           = base64encode(data.template_file.linux-vm-cloud-init.rendered)
+  custom_data = filebase64("${path.module}/boostrap.txt")
 
   network_interface_ids = [azurerm_network_interface.nic.id]
 

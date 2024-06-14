@@ -1,0 +1,10 @@
+#cloud-config
+package_upgrade: false
+packages:
+  - xrdp
+  - kali-desktop-xfce
+  - docker.io
+  - docker-compose
+runcmd:
+  - systemctl enable xrdp
+  - systemctl restart xrdp

@@ -70,6 +70,10 @@ resource "azurerm_network_interface_security_group_association" "nsg-association
   network_security_group_id = azurerm_network_security_group.kali-nsg.id
 }
 
+# Data template Bash bootstrapping file
+data "template_file" "linux-vm-cloud-init" {
+  template = file("boostrap.tftpl")
+}
 
 resource "azurerm_linux_virtual_machine" "kalivm" {
   name                  = "kali-${var.username}"
@@ -79,6 +83,7 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   admin_username        = var.admin_username
   admin_password        = var.admin_password
   disable_password_authentication = false
+  custom_data           = base64encode(data.template_file.linux-vm-cloud-init.rendered)
 
   network_interface_ids = [azurerm_network_interface.nic.id]
 
@@ -87,45 +92,16 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
     storage_account_type = "Standard_LRS"
   }
 
-
   plan {
     publisher = "kali-linux"
-    name      = "kali-2023-3"
+    name      = "kali-2023-4"
     product   = "kali"
   }
-
   source_image_reference {
     publisher = "kali-linux"
     offer     = "kali"
-    sku       = "kali-2023-3"
+    sku       = "kali-2023-4"
     version   = "latest"
   }
 
-}
-
-resource "null_resource" "kali" {
-  connection {
-    type     = "ssh"
-    user     = var.admin_username
-    password = var.admin_password
-    host     = resource.azurerm_public_ip.kalipip.ip_address
-  }
-
-  provisioner "remote-exec" {
-    inline = [
-  "sudo apt-get update",
-  "sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install kali-desktop-gnome",
-  "sudo apt-get install xrdp -qy",
-  "sudo systemctl start xrdp",
-  "sudo systemctl start xrdp-sesman",
-  "sudo systemctl start xrdp",
-  "sudo systemctl start xrdp-sesman",
-  "sudo systemctl enable xrdp",
-  "sudo systemctl enable xrdp-sesman",
-  "sudo systemctl reboot",
-]
-  }
-  depends_on = [
-    azurerm_linux_virtual_machine.kalivm
-  ]
 }

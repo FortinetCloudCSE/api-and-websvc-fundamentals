@@ -1,0 +1,7 @@
+#!/bin/bash
+# Install packages
+sudo apt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install kali-desktop-xfce xrdp docker.io docker-compose
+# Prepare crdp
+sudo systemctl enable xrdp
+sudo systemctl restart xrdp

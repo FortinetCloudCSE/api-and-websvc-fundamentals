@@ -2,8 +2,12 @@ output "kali_linux_PublicIP" {
   value       = azurerm_public_ip.kalipip.ip_address
 }
 
-output "username" {
+output "ssh-username" {
   value       = azurerm_linux_virtual_machine.kalivm.admin_username 
+}
+
+output "webui-username" {
+  value       = "guacadmin"
 }
 
 output "password" {
@@ -11,6 +15,6 @@ output "password" {
   sensitive = true
 }
 
-output "login_url" {
+output "login-url" {
   value = "https://${azurerm_public_ip.kalipip.ip_address}:8443"
 }

@@ -54,7 +54,7 @@ resource "azurerm_network_security_group" "kali-nsg" {
   } 
   security_rule {
     name                       = "allowhttpsinbound"
-    priority                   = 101
+    priority                   = 102
     direction                  = "Inbound"
     access                     = "Allow"
     protocol                   = "*"

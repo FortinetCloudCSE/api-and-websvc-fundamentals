@@ -79,7 +79,7 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   name                  = "kali-${var.username}"
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   location              = data.azurerm_resource_group.resourcegroup.location
-  size                  = "Standard_B2s"
+  size                  = var.vm_size
   admin_username        = var.admin_username
   admin_password        = var.admin_password
   disable_password_authentication = false
@@ -93,15 +93,15 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   }
 
   plan {
-    publisher = "kali-linux"
-    name      = "kali-2023-4"
-    product   = "kali"
+    publisher = var.publisher
+    name      = var.sku
+    product   = var.offer
   }
   source_image_reference {
-    publisher = "kali-linux"
-    offer     = "kali"
-    sku       = "kali-2023-4"
-    version   = "latest"
+    publisher = var.publisher
+    offer     = var.offer
+    sku       = var.sku
+    version   = var.vmversion
   }
 
 }

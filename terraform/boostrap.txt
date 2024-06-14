@@ -5,6 +5,11 @@ packages:
   - kali-desktop-xfce
   - docker.io
   - docker-compose
+  - curl
+  - kitty
+  - wireshark
+  - wireshark-common
+  - burpsuite
 runcmd:
   - systemctl enable xrdp
   - systemctl restart xrdp

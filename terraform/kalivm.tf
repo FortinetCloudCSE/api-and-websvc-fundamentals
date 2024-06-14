@@ -42,7 +42,7 @@ resource "azurerm_network_security_group" "kali-nsg" {
   resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   security_rule {
-    name                       = "allowsshinbound"
+    name                       = "allow-ssh-inbound"
     priority                   = 101
     direction                  = "Inbound"
     access                     = "Allow"
@@ -53,7 +53,7 @@ resource "azurerm_network_security_group" "kali-nsg" {
     destination_address_prefix = "*"
   } 
   security_rule {
-    name                       = "allowhttpsinbound"
+    name                       = "allow-https-inbound"
     priority                   = 102
     direction                  = "Inbound"
     access                     = "Allow"

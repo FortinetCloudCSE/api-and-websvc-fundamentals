@@ -20,17 +20,17 @@ For this lab, we will only need to interact with the Kali linux device.  We will
 - In your browswer window, typ in the url below, substituting your Kali server IP.
 
 ```
-https://<kali-IP>
+https://<kali-IP>:8443
 ```
 - Accept all warnings and proceed to the site.
 - You will be prompted to login to Apache Guacamole.  
-  - Type **guacadmin** for both Username and password and then click **Login**
+  - Type **guacadmin** for Username and enter the password you saved from task 2 of the Getting Started section.  Click **Login**
 
 ![Guac Login](guac_log.png)
 
-- The Guacamole home page will have a list of connections.  Click on the connection labled **Kali RDP**
+- The Guacamole home page will have a list of connections.  Click on the connection labled **Lab Desktop**
 
-![Kali RDP](kali_rdp.png)
+![Kali con](kali_con.png)
 
 - Note the icons at the top left of the home screen.  We will be using these during the lab.
 

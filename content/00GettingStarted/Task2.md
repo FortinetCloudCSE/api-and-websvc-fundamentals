@@ -44,17 +44,16 @@ terraform apply  -var='username=web31' --auto-approve
 ![lab12](../images/terraform2.png)
     
 5. Terraform deployment takes atleast 10-15 min to complete.
+  * Once Terraform is complete you should see the output. Please copy the output to notepad.
 
-![lab13](../images/terraformoutput.png)
+![lab13](../images/tfoutput.png)
 
-6. Once Terraform is complete you should see the output. Please copy the output to notepad.
 
-![output](../images/output.png)
 
 7. To print the node VM's login password, you can run this command 
 
    ```
-   terraform output -raw linuxvm_password
+   terraform output -raw password
    ```
 
-![](../images/linux_passwd.png)
+![lab14](../images/lin_pass.png)

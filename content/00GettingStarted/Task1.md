@@ -49,3 +49,4 @@ weight: 1
 
     ![cloudshell9](../images/cloudshell-09.png)
 
+* Your Cloud shell is now configured.

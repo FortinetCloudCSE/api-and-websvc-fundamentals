@@ -11,7 +11,7 @@ We will be using cetcat to craft http calls to our flask application.  These wil
 ## Make your first call
 For this first example, we want to use Wireshark to watch the interaction between netcat and the server.
 
-- In wireshark, select **Loopback:lo** as the interface and enter ```host 127.0.0.0 and port 8000``` into the capture filter
+- In wireshark, select **Loopback:lo** as the interface and enter ```host 127.0.0.1 and port 8000``` into the capture filter
 
 ![Shark start](shark_start.png)
 

@@ -30,6 +30,7 @@ password: FortinetKali1!
 - Choose one of the terminal sessions that you opened and issue the below commands:
 
 ```
+python3 -m venv .venv
 source .venv/bin/activate
 cd simple_flask_auth
 python3 app.py

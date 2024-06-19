@@ -24,7 +24,8 @@ https://<kali-IP>:8443
 ```
 - Accept all warnings and proceed to the site.
 - You will be prompted to login to Apache Guacamole.  
-  - Type **guacadmin** for Username and enter the password you saved from task 2 of the Getting Started section.  Click **Login**
+  - Type **guacadmin** for Username and enter **S3cur3P4ssw0rd123!**
+  - Click **Login**
 
 ![Guac Login](guac_log.png)
 
@@ -52,7 +53,7 @@ There are portions of this lab that will require large amounts of text to be ent
 ![Find shark](find_shark.png)
   - You will be asked to Authenticate.  
   ![Shark Auth](shark_auth.png)
-  - You will input the aureuser password ```FortinetKali1!``` and click **Authenticate**
+  - You will input the labuser password ```S3cur3P4ssw0rd123!``` and click **Authenticate**
   
 
 

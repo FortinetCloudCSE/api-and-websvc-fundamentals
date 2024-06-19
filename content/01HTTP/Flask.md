@@ -15,9 +15,9 @@ For this exercise, we will be using a very simple flask application.  Students w
 - We will be opening two CLI connections to Kali.  If you have the ability to ssh from your laptop, you can open two sessions:
 
 ```
-ssh asureuser@<kali-ip>
+ssh labuser@<kali-ip>
 
-password: FortinetKali1!
+password: S3cur3P4ssw0rd123!
 ```
 
 - If you prefer, you can open two terminal windows from the Kali Desktop
@@ -30,8 +30,7 @@ password: FortinetKali1!
 - Choose one of the terminal sessions that you opened and issue the below commands:
 
 ```
-python3 -m venv .venv
-source .venv/bin/activate
+git clone  https://github.com/fortidg/simple_flask_auth.git
 cd simple_flask_auth
 python3 app.py
 ```

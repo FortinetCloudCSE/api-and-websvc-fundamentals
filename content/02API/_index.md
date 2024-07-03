@@ -5,8 +5,8 @@ menuTitle: "Module 2: HTTP API Fundamentals"
 weight: 20
 ---
 
-### Prepare your Lab Environment
-
-1. Make sure that you are still logged in to your Kali Linux Desktop environment.
-2. 
-
+In this Module it will be all about API's. We will start with the basics and then move on to more advanced topics.
+Topics:
+- interact with various types of API's using various tools
+- how to authentication is handled
+- how to document API's

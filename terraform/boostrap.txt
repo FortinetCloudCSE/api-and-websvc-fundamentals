@@ -23,5 +23,6 @@ runcmd:
   - git clone --depth=1 https://github.com/randomstr1ng/guacamole-api-scripts /opt/scripts
   - cd /opt/scripts && python3 change-password.py --guacamole-host $(ip r | grep "dev eth0 proto" | cut -d " " -f 9) --guacamole-port 8443 --guacamole-user guacadmin --guacamole-password guacadmin --guacamole-new-password 'S3cur3P4ssw0rd123!'
   - cd /opt/scripts && python3 add-entry.py --guacamole-host $(ip r | grep "dev eth0 proto" | cut -d " " -f 9) --guacamole-port 8443 --guacamole-user guacadmin --guacamole-password 'S3cur3P4ssw0rd123!' --entry-name 'Lab Desktop' --host 172.17.0.1 --username labuser --password 'S3cur3P4ssw0rd123!'
+  - wget https://dl.pstmn.io/download/latest/linux_64 && tar xvzf /tmp/linux_64 -C /tmp/ && sudo mv /tmp/Postman /opt/ && sudo ln -s /opt/Postman/app/Postman /usr/local/bin/Postman
   - pip install flask
   - pip install Flask-BasicAuth

@@ -1,6 +1,6 @@
 ---
-title: "Task 2 - Explore different API types/flavours"
-menuTitle: "Task 2 - Explore different APIs"
+title: "Task 2 - Basic interaction with API"
+menuTitle: "Task 2 - Basic interaction with API"
 chapter: false
 weight: 2
 ---

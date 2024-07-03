@@ -1,8 +1,8 @@
 ---
-title: "Task 3 - Explore different API types/flavours"
-menuTitle: "Task 3 - Explore different APIs"
+title: "Task 4 - Advanced API handling"
+menuTitle: "Task 4 - Advanced API handling"
 chapter: false
-weight: 3
+weight: 4
 ---
 In this lab you will explore more advanced API handling techniques. This will based upon the previous labs and will require you to use the tools you have learned about.
 We will cover topics like OAuth and JWT tokens, API security, and API testing.

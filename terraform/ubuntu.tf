@@ -1,3 +1,8 @@
+resource "azurerm_marketplace_agreement" "ubuntu" {
+  publisher = "var.ubupublisher"
+  offer     = "var.ubuoffer"
+  plan      = "hourly"
+}
 
 resource "azurerm_public_ip" "ubupip" {
   name                = "${var.username}_ubupip"
@@ -16,8 +21,8 @@ resource "azurerm_network_interface" "ubunic" {
   ip_configuration {
     name                          = "${var.username}_ipconfig"
     subnet_id                     = azurerm_subnet.protectedsubnet.id
-    private_ip_address_allocation = "static"
-    private_ip_address            = "${cidrhost(10.0.0.0/24, 5)}"
+    private_ip_address_allocation = "Static"
+    private_ip_address            = "10.0.0.15"
     public_ip_address_id          = azurerm_public_ip.ubupip.id
   }
 }

@@ -1,8 +1,3 @@
-resource "azurerm_marketplace_agreement" "ubuntu" {
-  publisher = "var.ubupublisher"
-  offer     = "var.ubuoffer"
-  plan      = "hourly"
-}
 
 resource "azurerm_public_ip" "ubupip" {
   name                = "${var.username}_ubupip"
@@ -67,11 +62,6 @@ resource "azurerm_linux_virtual_machine" "ubuntu" {
     storage_account_type = "Standard_LRS"
   }
 
-  plan {
-    publisher = var.ubupublisher
-    name      = var.ubusku
-    product   = var.ubuoffer
-  }
   source_image_reference {
     publisher = var.ubupublisher
     offer     = var.ubuoffer

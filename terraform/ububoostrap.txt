@@ -5,9 +5,6 @@ packages:
   - docker-compose
 
 runcmd:
-  - systemctl enable xrdp
-  - systemctl restart xrdp
   - touch /home/labuser/.hushlogin
-  - git clone --depth=1 https://github.com/fortidg/docker-compose-101.git /opt/docker101
-  - cd /opt/docker101 && docker-compose up
+
 

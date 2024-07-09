@@ -6,11 +6,11 @@ weight: 2
 ---
 In this Task you will interact with the REST API that you have started in the previous task. You will use different tools to send requests to the API and review the output.
 
-# Prepare the Environment
+## Prepare the Environment
 Make sure that you are still logged in to your Kali Linux Desktop environment and the Flask application is running.
 
-# Explore the API
-## Interact with REST API using `curl`
+## Explore the API
+### Interact with REST API using `curl`
 `curl` is **the** command line tool to transfer data from or to a server. It is available on most of the operating systems and can be used to interact with APIs.
 1. Open a new terminal window and issue the below command:
 ```bash
@@ -24,7 +24,7 @@ curl -X GET 'http://localhost:8000/api/v1/systeminfo?cmd=whoami'
 4. Review the output and try to understand the structure of the response and what is different from the previous output.
 3. Test the endpoint with different HTTP methods like `POST`, `PUT`, `DELETE` and review the output.
 
-## Interact with REST API using Postman
+### Interact with REST API using Postman
 Postman is a collaborative platform used for developing, testing, and documenting APIs, enabling developers to streamline and automate their API workflows.
 1. To open the Postman application, type the following command in a terminal window:
 ```bash

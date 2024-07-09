@@ -10,7 +10,7 @@ In this Task you will interact with the REST API that you have started in the pr
 Make sure that you are still logged in to your Kali Linux Desktop environment and the Flask application is running.
 
 ## Explore the API
-### Interact with REST API using `curl`
+### Interact with REST API using curl
 `curl` is **the** command line tool to transfer data from or to a server. It is available on most of the operating systems and can be used to interact with APIs.
 1. Open a new terminal window and issue the below command:
 ```bash

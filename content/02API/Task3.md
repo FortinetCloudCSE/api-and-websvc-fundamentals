@@ -148,3 +148,60 @@ To solve the task, the following query using a ID can be used:
 {{% /expand %}}
 
 ## Interacting with SOAP API
+### SOAP API descriptor
+1. Open Firefox Browser from the navigation bar
+2. Open the following URL: https://www.crcind.com/csp/samples/SOAP.Demo.cls?wsdl
+![img_15.png](img_15.png)
+3. You will see the WSDL document, which describes the methods available in the SOAP API and their parameters.
+
+### Interacting with SOAP API using Postman
+1. Open the Postman application by typing the following command in a terminal window. If Postman is still open from the pervious task, you can skip step 1-4
+```bash
+Postman
+```
+2. A new window will open which will look like this:
+![img.png](img.png)
+
+3. select `lightweight API client` below the Account creation form.
+![img_1.png](img_1.png)
+
+4. A empty Workspace will open.
+5. Create a new HTTP request by clicking on `New` at the left top and the select `HTTP`
+![img_14.png](img_14.png)
+6. Change the request type to `POST` and enter the URL `https://www.crcind.com/csp/samples/SOAP.Demo.cls`
+![img_16.png](img_16.png)
+7. Click on the "Headers" tab. Add a new header with the key `Content-Type` and the value `text/xml` and `SOAPAction` with the value `http://tempuri.org/SOAP.Demo.GetByName`
+![img_19.png](img_19.png)
+8. Click on the "Body" tab. Select the `raw` option and enter the following XML:
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetByName>
+         <!--Optional:-->
+         <tem:name>Solomon,Thelma J.</tem:name>
+      </tem:GetByName>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+![img_18.png](img_18.png)
+9. Click on `Send` and review the output. (Scroll down to find the details)
+   - The `GetByNameResponse` contains the result of the `GetByName` method call. 
+   - The `GetByNameResult` contains the details of the person with the name `Solomon,Thelma J.`
+![img_20.png](img_20.png)
+10. The WSDL document describes other methods that you can experiment with. For example, you can try the `AddInteger` method.
+{{% notice style="secondary" icon="eye" title="Hint" %}}
+Update the header `SOAPAction` according to the function you want to use.
+{{% /notice %}}
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:AddInteger>
+         <tem:Arg1>5</tem:Arg1>
+         <tem:Arg2>10</tem:Arg2>
+      </tem:AddInteger>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+![img_21.png](img_21.png)

@@ -20,6 +20,4 @@ This course will help students learn the Fundamentals of Web Applications.  This
 - Understanding Modern Web Applications
  
 
-
-
-
+![diagram](/images/env_diagram.png)

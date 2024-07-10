@@ -4,7 +4,16 @@ menuTitle: "Task 1 - Get The App"
 weight: 5
 ---
 
-For the purpose of this lab, we are going to use an application adapted from the excellent training found at [this link](https://medium.com/@kesaralive/getting-started-with-docker-compose-hands-on-project-experience-e562ab07e24c).  If you would like to dig deeper into how to create a 3 tiered application using Docker, go check it out.
+For the purpose of this lab, we are going to use an application adapted from the excellent training found at [this link](https://medium.com/@kesaralive/getting-started-with-docker-compose-hands-on-project-experience-e562ab07e24c).  If you would like to dig deeper into how to create a 3 tiered application using Docker, go check it out.  We will be using Docker-Compose to bring up a pre-configured Application.
+
+{{% notice note %}}
+**According to IBM:**
+Docker is an open-source platform that enables developers to build, deploy, run, update and manage containers.
+
+Containers are standardized, executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
+
+Containers simplify the development and delivery of distributed applications. They have become increasingly popular as organizations shift to cloud-native development and hybrid multicloud environments.  For more information check out [this link](https://www.ibm.com/topics/docker).
+{{% /notice %}}
 
 {{% notice info %}} If you need help accessing Kali, refer back to  **Module 1: HTTP Fundamentals**. The IP Address of the Kali server can be found by opening the Azure shell and typing ```cd api-and-websvc-fundamentals/terraform``` and then typing ```terraform output```. Also, the terraform output command will have the public IP of the Ubuntu host, just in case you would like to log in from an ssh app or terminal on your laptop.{{% /notice %}}
 
@@ -29,7 +38,7 @@ For the purpose of this lab, we are going to use an application adapted from the
 ## Start the Application
 
 - At the prompt, type ```sudo docker-compose up```.
-- The application will take a few minutes to come up and download all of the required packages.  Once it is complete you should se something along the below lines, indicating that the sql server is ready.  
+- The application will take a few minutes to come up and download all of the required packages.  Once it is complete you should see something along the below lines, indicating that the sql server is ready.  
 
 ```
 database_1    | 2024-07-09T16:10:24.495277Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '9.0.0'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.

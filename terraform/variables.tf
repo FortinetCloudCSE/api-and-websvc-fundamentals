@@ -37,3 +37,24 @@ variable "vm_size" {
   type    = string
   default = "Standard_B2s"
 }
+
+# Ubuntu VM Image details
+variable "ubupublisher" {
+  type    = string
+  default = "canonical"
+}
+
+variable "ubuoffer" {
+  type    = string
+  default = "0001-com-ubuntu-server-focal"
+}
+
+variable "ubusku" {
+  type    = string
+  default = "20_04-lts-gen2"
+}
+
+variable "ubuvmversion" {
+  type    = string
+  default = "20.04.202406140"
+}

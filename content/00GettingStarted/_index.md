@@ -3,7 +3,13 @@ title: "Getting Started"
 menuTitle: "Getting Started"
 weight: 5
 ---
-#### Provisioning the Azure environment (40min)
+
+## Student Setup Diagram
+
+Each Student wil have it's own environment for the lab. The following diagram provides an overview on how the Student environment is rolled out.
+![setup_diagram](./setup_diagram.png)
+
+## Provisioning the Azure environment (40min)
 
 Provision your Azure Environment, enter your Email address and click _Provision_
 {{< launchdemoform labdefinition="web-101" >}}
@@ -26,3 +32,4 @@ Tasks
 * Setup Azure Cloud Shell
 * Run Terraform
 * Verify Terraform
+

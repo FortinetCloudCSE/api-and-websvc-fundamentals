@@ -75,6 +75,7 @@ Postman
 ```
 ![img_11.png](img_11.png)
 13. Click on `Query` and review the output.
+
 14. Lets advance our GraphQL skills and adjust the queries using variables. Enter the following query:
 ```graphql
 query LaunchDetails($id: ID!) {
@@ -100,6 +101,7 @@ query LaunchDetails($id: ID!) {
 ![img_12.png](img_12.png)
 ![img_13.png](img_13.png)
 16. Click on `Query` and review the output.
+
 17. To get some more practice, try to write your own queries and explore the SpaceX API.
     - List the last 5 launches with their mission names and launch dates.
 {{% expand title="Solution" %}}
@@ -170,7 +172,13 @@ Postman
 ![img_14.png](img_14.png)
 6. Change the request type to `POST` and enter the URL `https://www.crcind.com/csp/samples/SOAP.Demo.cls`
 ![img_16.png](img_16.png)
-7. Click on the "Headers" tab. Add a new header with the key `Content-Type` and the value `text/xml` and `SOAPAction` with the value `http://tempuri.org/SOAP.Demo.GetByName`
+7. Click on the "Headers" tab. Add 2 new headers with the following key/value pairs:
+
+Key | Value
+--- | ---
+`Content-Type` | `text/xml`
+`SOAPAction` | `http://tempuri.org/SOAP.Demo.GetByName`
+
 ![img_19.png](img_19.png)
 8. Click on the "Body" tab. Select the `raw` option and enter the following XML:
 ```xml

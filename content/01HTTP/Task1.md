@@ -9,8 +9,8 @@ More information about Flask can be found at the [Flask documentation page](http
 
 
 
-## Navigate to the device CLI
-For this exercise, we will be using a very simple flask application.  Students will start the application within a python virtual environment. It us useful to monitor the debug messages for the application during user interactions. 
+## Navigate to the Kali Linux CLI
+For this exercise, we will be using a very simple flask application.  Students will start the application within a python virtual environment. It is useful to monitor the debug messages for the application during user interactions. 
 
 - We will be opening two CLI connections to Kali.  If you have the ability to ssh from your laptop, you can open two sessions:
 

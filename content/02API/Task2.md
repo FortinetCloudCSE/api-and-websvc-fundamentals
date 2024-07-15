@@ -47,11 +47,11 @@ Postman
 
 ## Interact with REST API using HTTP Post
 HTTP POST is not another tool, it is a different communication method used by APIs to send data to the server. You can use e.g. `curl` or `Postman` to send a POST request to the API. In this task you are free to use the tool of your choice.
-1. Use `curl` or `Postman` to send a POST request to the API endpoint `http://localhost:8000/api/v1/calculator` and review the output. In the Body, add empty JSON object `{}` and select `JSON` in the dropdown.
+1. Use `curl` or `Postman` to send a POST request to the API endpoint `http://localhost:8000/api/v1/calculate` and review the output. In the Body, add empty JSON object `{}` and select `JSON` in the dropdown.
 ![img_5.png](img_5.png)
 If you use curl, a http header needs to be added to the request:
 ```bash
-curl -X POST 'http://localhost:8000/api/v1/calculator' -H 'Content-Type: application/json' -d '{}'
+curl -X POST 'http://localhost:8000/api/v1/calculate' -H 'Content-Type: application/json' -d '{}'
 ```
 ![img_6.png](img_6.png)
 2. Try to walk through the error messages (or the code) to understand, which parameters need to be provided to get a successful api response.
@@ -59,8 +59,8 @@ Hint: Example Payload:
 ```json
 {
     "operation": "add",
-    "number1": 1,
-    "number2": 2
+    "num1": 1,
+    "num2": 2
 }
 ```
 3. Test the endpoint with different operations like `add`, `subtract`, `multiply`, `divide` and review the output. Use different tools to send the requests.

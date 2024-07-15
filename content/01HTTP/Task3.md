@@ -14,6 +14,7 @@ Almost all browsers have developer toolkits.  Below are some notable examples:
 ## Open Firefox and Developer Tools
 
 
+- Go to your Kali Linux RDP session
 - Open Firefox from the top left menu bar and navigate to **http://localhost:8000/**
 - Right click anywhere on the screen, which will cause a menu to pop up.  At the bottom of that menu, click on **Inspect(Q)**
   - This will cause "Web Developer Tools" to open at the bottom of the screen.  
@@ -70,7 +71,7 @@ On the left hand side of this screen is the "Storage tree", which lists all of t
 ![No Cook](no_cook.png)
 
 - Back on the web page (http://localhost:8000/view_feedback), click the link below the GIF to give feedback.
-  - Enter the Username (student) and Password (Fortinet1!) and select **Sign In**
+  - Enter the Username ```student``` and Password ```Fortinet1!``` and select **Sign In**
   - Type a name and some feedback into the appropriate boxes and click **Submit**
   
 - Back on the Storage tree, expand the Cookies Section and you will notice that you now have a cooked with a key/value of "name/whatever name you entered" in the "Table Widget" to the right of the Storage Tree

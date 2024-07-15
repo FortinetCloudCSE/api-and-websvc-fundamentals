@@ -61,7 +61,7 @@ We've determined that there is some content which is not being served properly t
 
 </details>
 
-- Us Nano to fix the code.
+- Use Nano to fix the code.
     - Navigate up/down and left/right with the arrow keys
     - Delete text using the backspace or delete keys
     - Type text as normal with the keyboard

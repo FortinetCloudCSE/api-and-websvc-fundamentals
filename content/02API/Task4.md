@@ -4,7 +4,7 @@ menuTitle: "Task 4 - Advanced API handling"
 chapter: false
 weight: 4
 ---
-In this lab you will explore more advanced API handling techniques. This will based upon the previous labs and will require you to use the tools you have learned about.
+In this lab you will explore more advanced API handling techniques. This will build upon the previous labs and require you to use the tools you have learned about.
 We will cover topics like OAuth and JWT tokens, API security, and API testing.
 
 ## Documentation of APIs (aka Swagger UI)
@@ -62,6 +62,9 @@ def protected():
         return jsonify({"message": "OK: Authorized"}), 200
 ```
 9. Configure the HTTP header `X-API-KEY` with the correct value identified in the Flask Python code.
+10. Key | Value
+--- | ---
+`X-API-KEY` | `VGhpcyBpcyBhIFNzZWNyZXQgdG9rZW4gd2hpY2ggc2hvdWxkIGJlIGhhbmRsZWQgdmVyeSBjYXJlZnVsbHkh`
 ![img_30.png](img_30.png)
 10. You can now try to access the protected endpoint with the correct token. You should receive a `200 OK` response.
 ![img_31.png](img_31.png)

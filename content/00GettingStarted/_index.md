@@ -6,7 +6,7 @@ weight: 5
 
 ## Student Setup Diagram
 
-Each Student wil have it's own environment for the lab. The following diagram provides an overview on how the Student environment is rolled out.
+Each Student will have their own environment for the lab. The following diagram provides an overview of the Student environment.
 
    ![setup](/images/env_diagram.png)
 

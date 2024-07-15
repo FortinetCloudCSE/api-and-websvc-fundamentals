@@ -18,11 +18,15 @@ weight: 10
 
 For this lab, we will only need to interact with the Kali linux device.  We will use guacamole to create an RDP session in your browser.
 
-- In your browswer window, typ in the url below, substituting your Kali server IP.
+- In your browser window, type in the url below, substituting your Kali server IP.
 
-```
-https://<kali-IP>:8443
-```
+  {{% notice warning %}}
+  Kali Linux takes about 20 minutes to fully deploy, so you may get a connection refused error.  Please be patient and the login prompt will eventually appear.
+  {{% /notice %}}
+
+  ```
+  https://<kali-IP>:8443
+  ```
 - Accept all warnings and proceed to the site.
 - You will be prompted to login to Apache Guacamole.  
   - Type **guacadmin** for Username and enter **S3cur3P4ssw0rd123!**

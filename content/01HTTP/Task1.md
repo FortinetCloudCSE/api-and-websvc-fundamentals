@@ -3,6 +3,13 @@ title: "Task 1 - Start Flask Application"
 menuTitle: "Task 1 - Start Flask Application"
 weight: 1
 ---
+
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Spin up a web application
+| **Task**                   | Clone and start a Flask application
+| **Verify task completion** | Browser to <some IP> and get XYZ
+
 **According to Google AI:** Flask is a web development framework written in Python that helps developers build web applications. It's a microframework, which means it doesn't rely on specific tools or libraries, and it's considered a good choice for developers who are already familiar with Python. Flask's minimalistic design gives developers more control over their applications' structure, and it includes features like templating, database integration, and routing.
 
 More information about Flask can be found at the [Flask documentation page](https://flask.palletsprojects.com/en/3.0.x/)

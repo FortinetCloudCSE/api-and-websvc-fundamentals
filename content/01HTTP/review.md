@@ -1,7 +1,6 @@
 ---
-title: "Module 1: HTTP Fundamentals"
-chapter: false
-menuTitle: "Module 1: HTTP Fundamentals"
+title: "HTTP review"
+menuTitle: "HTTP review"
 weight: 50
 ---
 

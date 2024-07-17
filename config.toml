@@ -160,39 +160,44 @@ enableEmoji = true
   externalLinkTarget = "_blank"
 
 [[menu.shortcuts]]
+name = "<i class='fas fa-graduation-cap'></i> Slides and Course Material "
+url = "https://github.com/FortinetCloudCSE/api-and-websvc-fundamentals/tree/main/content/slides"
+weight = 1
+
+[[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> OWASP Top 10 "
 url = "https://owasp.org/www-project-top-ten"
-weight = 1
+weight = 2
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> OWASP API Security Top 10 "
 url = "https://owasp.org/API-Security/editions/2023/en/0x00-header/"
-weight = 2
+weight = 3
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> W3Schools"
 url = "https://www.w3schools.com/"
-weight = 3
+weight = 4
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> Swagger API Documentation"
 url = "https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/"
-weight = 4
+weight = 5
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> HTTP Authentication"
 url = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication"
-weight = 5
+weight = 6
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> API Authentication"
 url = "https://www.postman.com/api-platform/api-authentication/"
-weight = 6
+weight = 7
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-graduation-cap'></i> Portswigger Security Academy"
 url = "https://portswigger.net/web-security"
-weight = 7
+weight = 8
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tools'></i> Wireshark"

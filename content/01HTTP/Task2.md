@@ -33,7 +33,7 @@ Please take care when entering the commands below. Please enter the commands **o
   GET /hello HTTP/1.1
   ``` 
 
-  3. Hit enter 2 times>
+  3. _**Hit enter 2 times**_
   
 {{% /notice %}}
 
@@ -124,7 +124,7 @@ username=student&password=welcome
 
 JavaScript Object Notation (JSON) is a text-based format for representing and exchanging data that is both human and machine-readable. It is often used in web applications, but can be used independently from JavaScript and in any programming language. JSON is popular with developers because it is lightweight, easy to parse and generate, and requires less coding.  For This step, we are going to set the "Content-Type" to **json** and then add key/values for username and password in a simple JSON string.  
 
-For mor information about JSON, click on [this link](https://www.w3schools.com/js/js_json_intro.asp).
+For more information about JSON, click on [this link](https://www.w3schools.com/js/js_json_intro.asp).
 
 ```
 nc localhost 8000 -vvv

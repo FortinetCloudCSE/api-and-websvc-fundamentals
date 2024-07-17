@@ -4,7 +4,7 @@ menuTitle: "Task 3 - Explore different APIs"
 chapter: false
 weight: 3
 ---
-In this Lab you will explore different types of APIs. You will use different tools like `curl`, Postman or Burp Suite to interact with the APIs.
+In this Lab you will explore different types of APIs. You will use different tools like **curl, Postman or Burp Suite** to interact with the APIs.
 This will give you a better understanding of how APIs work and how they can be used in different scenarios.
 
 In the previous task you have already gained some experience with a REST API. In this task you will explore different types of APIs like SOAP or GraphQL.
@@ -17,11 +17,11 @@ Postman
 2. A new window will open which will look like this:
 ![img.png](img.png)
 
-3. select `lightweight API client` below the Account creation form.
+3. select **lightweight API client** below the Account creation form.
 ![img_1.png](img_1.png)
 
 4. A empty Workspace will open.
-5. To create a new GraphQL request, select `New` in the top left and then `GraphQL`
+5. To create a new GraphQL request, select **New** in the top left and then **GraphQL**
 ![img_7.png](img_7.png)
 
 6. As URL, enter `https://spacex-production.up.railway.app/`. Postman will automatically detect that this is a GraphQL API and populate the Queries.
@@ -36,7 +36,7 @@ Postman
   }
 }
 ```
-9. Click on `Query` and review the output.
+9. Click on **Query** and review the output.
 ![img_9.png](img_9.png)
 10. Let's continue by getting more data and details by including the rocket and the launch site. Enter the following query:
 ```graphql
@@ -55,7 +55,7 @@ Postman
   }
 }
 ```
-11. Click on `Query` and review the output.
+11. Click on **Query** and review the output.
 ![img_10.png](img_10.png)
 12. GraphQL queries all the usage of Arguments/Variables within Queries. Lets update the previous query by adding a Argument. Enter the following query:
 ```graphql
@@ -74,7 +74,7 @@ Postman
 }
 ```
 ![img_11.png](img_11.png)
-13. Click on `Query` and review the output.
+13. Click on **Query** and review the output.
 
 14. Lets advance our GraphQL skills and adjust the queries using variables. Enter the following query:
 ```graphql
@@ -92,7 +92,7 @@ query LaunchDetails($id: ID!) {
   }
 }
 ```
-15. Click on `Variables` and enter the following JSON:
+15. Click on **Variables** and enter the following JSON:
 ```json
 {
   "id": "6243aec2af52800c6e91925d"
@@ -100,7 +100,7 @@ query LaunchDetails($id: ID!) {
 ```
 ![img_12.png](img_12.png)
 ![img_13.png](img_13.png)
-16. Click on `Query` and review the output.
+16. Click on **Query** and review the output.
 
 17. To get some more practice, try to write your own queries and explore the SpaceX API.
     - List the last 5 launches with their mission names and launch dates.
@@ -152,25 +152,23 @@ To solve the task, the following query using a ID can be used:
 ## Interacting with SOAP API
 ### SOAP API descriptor
 1. Open Firefox Browser from the navigation bar
-2. Open the following URL: https://www.crcind.com/csp/samples/SOAP.Demo.cls?wsdl
+2. Open the following URL: ```https://www.crcind.com/csp/samples/SOAP.Demo.cls?wsdl```
 ![img_15.png](img_15.png)
 3. You will see the WSDL document, which describes the methods available in the SOAP API and their parameters.
 
 ### Interacting with SOAP API using Postman
 1. Open the Postman application by typing the following command in a terminal window. If Postman is still open from the pervious task, you can skip step 1-4
-```bash
-Postman
-```
+
 2. A new window will open which will look like this:
 ![img.png](img.png)
 
-3. select `lightweight API client` below the Account creation form.
+3. select **lightweight API client** below the Account creation form.
 ![img_1.png](img_1.png)
 
 4. A empty Workspace will open.
-5. Create a new HTTP request by clicking on `New` at the left top and the select `HTTP`
+5. Create a new HTTP request by clicking on **New** at the left top and the select **HTTP**
 ![img_14.png](img_14.png)
-6. Change the request type to `POST` and enter the URL `https://www.crcind.com/csp/samples/SOAP.Demo.cls`
+6. Change the request type to **POST** and enter the URL `https://www.crcind.com/csp/samples/SOAP.Demo.cls`
 ![img_16.png](img_16.png)
 7. Click on the "Headers" tab. Add 2 new headers with the following key/value pairs:
 
@@ -180,7 +178,7 @@ Key | Value
 `SOAPAction` | `http://tempuri.org/SOAP.Demo.GetByName`
 
 ![img_19.png](img_19.png)
-8. Click on the "Body" tab. Select the `raw` option and enter the following XML:
+8. Click on the "Body" tab. Select the **raw** option and enter the following XML:
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org">
    <soapenv:Header/>
@@ -193,13 +191,13 @@ Key | Value
 </soapenv:Envelope>
 ```
 ![img_18.png](img_18.png)
-9. Click on `Send` and review the output. (Scroll down to find the details)
-   - The `GetByNameResponse` contains the result of the `GetByName` method call. 
-   - The `GetByNameResult` contains the details of the person with the name `Solomon,Thelma J.`
+9. Click on **Send** and review the output. (Scroll down to find the details)
+   - The **GetByNameResponse** contains the result of the **GetByName** method call. 
+   - The **GetByNameResult** contains the details of the person with the name **Solomon,Thelma J.**
 ![img_20.png](img_20.png)
-10. The WSDL document describes other methods that you can experiment with. For example, you can try the `AddInteger` method.
+10. The WSDL document describes other methods that you can experiment with. For example, you can try the **AddInteger** method.
 {{% notice style="secondary" icon="eye" title="Hint" %}}
-Update the header `SOAPAction` according to the function you want to use.
+Update the header **SOAPAction** according to the function you want to use.
 {{% /notice %}}
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org">

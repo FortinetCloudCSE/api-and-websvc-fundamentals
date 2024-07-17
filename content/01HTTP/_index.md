@@ -1,11 +1,17 @@
 ---
-title: "Module 1: HTTP Fundamentals"
-chapter: false
-menuTitle: "Module 1: HTTP Fundamentals"
+title: "HTTP review"
+menuTitle: "HTTP review"
 weight: 10
 ---
 
 ### ***Logging into your student environment***
+
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Understand the fundamentals of HTTP protocol and how to interact with and observe web traffic
+| **Task**                   | Start a web application using Flask.  Interact using NetCat and Observe with Wireshark.  Explore Browser based developer tools
+| **Verify task completion** | Execute sample web defacement attack
+
 
 ## Prereqs
   - Internet Access
@@ -29,7 +35,7 @@ For this lab, we will only need to interact with the Kali linux device.  We will
   ```
 - Accept all warnings and proceed to the site.
 - You will be prompted to login to Apache Guacamole.  
-  - Type **guacadmin** for Username and enter **S3cur3P4ssw0rd123!**
+  - Enter ```guacadmin``` for Username and enter ```S3cur3P4ssw0rd123!```
   - Click **Login**
 
 ![Guac Login](guac_log.png)

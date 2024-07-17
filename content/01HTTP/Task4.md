@@ -7,7 +7,7 @@ weight: 20
 While this is not intended as an ethical hacking course, it is useful to understand how simple attacks work.  The simple flask site that we have here doesn't have any juicy databases, chock full of Personally Identifiable Information (PII) that can be harvested, but we can set a trap for a user who logs in to check the site feedback.
 
 ## Leave Feedback
-- In your browser on Kali, navigate to **http://localhost:8000/view_feedback**
+- In your browser on Kali, navigate to ```http://localhost:8000/view_feedback```
   - Scroll down and read the Feedback.
 - Click on the link to leave feedback and follow the process to do so.
 - Navigate back to **http://localhost:8000/view_feedback** and note that your feed back was recorded.

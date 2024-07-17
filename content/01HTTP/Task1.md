@@ -35,6 +35,7 @@ cd simple_flask_auth
 python3 app.py
 ```
 - You should see that the flask application has successfully started and is listening on port 8000.
+- Leave this terminal window open so the app continues to run
 
 ![Flask Start](flask_start.png)
 

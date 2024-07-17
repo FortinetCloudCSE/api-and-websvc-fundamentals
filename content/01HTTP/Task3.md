@@ -15,7 +15,7 @@ Almost all browsers have developer toolkits.  Below are some notable examples:
 
 
 - Go to your Kali Linux RDP session
-- Open Firefox from the top left menu bar and navigate to **http://localhost:8000/**
+- Open Firefox from the top left menu bar and navigate to ```http://localhost:8000/```
 - Right click anywhere on the screen, which will cause a menu to pop up.  At the bottom of that menu, click on **Inspect(Q)**
   - This will cause "Web Developer Tools" to open at the bottom of the screen.  
 

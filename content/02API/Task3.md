@@ -4,7 +4,13 @@ menuTitle: "Task 3 - Explore different APIs"
 chapter: false
 weight: 3
 ---
-In this Lab you will explore different types of APIs. You will use different tools like **curl, Postman or Burp Suite** to interact with the APIs.
+
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | In this Lab you will explore different types of APIs.
+| **Task**                   | You will use different tools like **curl, Postman or Burp Suite** to interact with the APIs.
+| **Verify task completion** | If properly executed, the applications will return data as pictured below
+
 This will give you a better understanding of how APIs work and how they can be used in different scenarios.
 
 In the previous task you have already gained some experience with a REST API. In this task you will explore different types of APIs like SOAP or GraphQL.

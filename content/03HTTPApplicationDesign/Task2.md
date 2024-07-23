@@ -4,6 +4,12 @@ menuTitle: "Task 2  - Fix the Front End"
 weight: 15
 ---
 
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Inspect the application to determine what (if anything) is not working
+| **Task**                   | Use Firefox dev tools to inspect content.  Use nano to fix it and re-inspect
+| **Verify task completion** | If properly executed, you should see the full content of the application rendered
+
 Now that we have the application up and running, let's look around at the app and see if we can spot any issues
 
 ## Browse the App
@@ -34,7 +40,7 @@ We've determined that there is some content which is not being served properly t
 - I you would like a hint, see below
 
 <details>
-  <summary><h5><b>Click here for hint</b></h5></summary>
+  <summary><h5><b><li>Click here for hint</b></h5></summary>
    
    ![find script](find-script.png)
 
@@ -43,7 +49,7 @@ We've determined that there is some content which is not being served properly t
 - This bit of "script" code is telling the web client to fetch the data at **http://localhost:5000**.  If we remember from our first exercise, port 5000 was returning data.  Why isn't this working?
 
 <details>
-  <summary><h5><b>Click here for answer</b></h5></summary>
+  <summary><h5><b><li>Click here for answer</b></h5></summary>
    
    **If our client were on the same local machine as our application, this would work fine.  Since our client is a different host, when it recievces the script to fetch data from http://localhost:5000 it queries itself, and of course doesn't find anything.**
 
@@ -52,7 +58,7 @@ We've determined that there is some content which is not being served properly t
 - Ok, so how can we fix it?  See if you can figure it out before checking the answer!
 
 <details>
-  <summary><h5><b>Click here for answer</b></h5></summary>
+  <summary><h5><b><li>Click here for answer</b></h5></summary>
    
    **In this case, we need to change the script to reference a valid url, which is reachable by our client (or any external client).**  
    
@@ -71,7 +77,7 @@ We've determined that there is some content which is not being served properly t
         - Type ctrl + x 
 
 <details>
-  <summary><h5><b>Click here for example</b></h5></summary>
+  <summary><h5><b><li>Click here for example</b></h5></summary>
    
    Depending on the method you decided on to fix the code, use Nano to update the Hosts file on Kali
     - From the **Kali** terminal ```sudo nano /etc/hosts```

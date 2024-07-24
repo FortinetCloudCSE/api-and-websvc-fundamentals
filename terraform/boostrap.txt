@@ -4,7 +4,6 @@ packages:
   - xrdp
   - kali-desktop-xfce
   - docker.io
-  - docker-compose
   - curl
   - kitty
   - wireshark
@@ -15,6 +14,9 @@ packages:
   - python3-pip
   - python3-venv
 runcmd:
+  - sudo curl -SL https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+  - sudo chmod 755 /usr/local/bin/docker-compose
+  - sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
   - systemctl enable xrdp
   - systemctl restart xrdp
   - touch /home/labuser/.hushlogin

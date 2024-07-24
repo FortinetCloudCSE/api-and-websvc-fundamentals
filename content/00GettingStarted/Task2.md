@@ -32,7 +32,7 @@ terraform init
     {{% notice style="warning" title="**IF THE COMMAND ABOVE RESULTS IN AN ERROR**" %}} 
 
 You can manually specify your username (found in your Azure Account email) in the command  
-If your Workshop Azure account login is se31@ftntxxxxx.onmicrosoft.com, your username is **se31**, and the command to enter is:
+If your Workshop Azure account login is web31@ftntxxxxx.onmicrosoft.com, your username is **web31**, and the command to enter is:
 
 ```sh
 terraform apply  -var='username=web31' --auto-approve

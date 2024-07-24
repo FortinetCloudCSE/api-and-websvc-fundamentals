@@ -37,16 +37,17 @@ We've determined that there is some content which is not being served properly t
 - Navigate to the front end folder, type ```cd docker-compose-101/frontend```
 - Now let's look at the index.html page and see if we can find any reference to **http://localhost:5000** by typing ```nano index.html``` 
 - Use your arrow keys to navigate the cursor until you find it
-- I you would like a hint, see below
+- If you would like a hint, see below
 
 <details>
   <summary><h5><b><li>Click here for hint</b></h5></summary>
    
    ![find script](find-script.png)
 
+This bit of "script" code is telling the web client to fetch the data at **http://localhost:5000**.  If we remember from our first exercise, port 5000 was returning data.
 </details>
 
-- This bit of "script" code is telling the web client to fetch the data at **http://localhost:5000**.  If we remember from our first exercise, port 5000 was returning data.  Why isn't this working?
+- Why isn't this working?
 
 <details>
   <summary><h5><b><li>Click here for answer</b></h5></summary>

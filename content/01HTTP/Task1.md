@@ -6,9 +6,9 @@ weight: 1
 
 |                            |    |  
 |----------------------------| ----
-| **Goal**                   | Spin up a web application
-| **Task**                   | Clone and start a Flask application
-| **Verify task completion** | Browser to <some IP> and get XYZ
+| **Goal**                   | Start application
+| **Task**                   | Clone github repostitory and deploy application
+| **Verify task completion** | You should see the repo
 
 **According to Google AI:** Flask is a web development framework written in Python that helps developers build web applications. It's a microframework, which means it doesn't rely on specific tools or libraries, and it's considered a good choice for developers who are already familiar with Python. Flask's minimalistic design gives developers more control over their applications' structure, and it includes features like templating, database integration, and routing.
 

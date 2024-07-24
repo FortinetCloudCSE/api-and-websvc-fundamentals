@@ -4,6 +4,12 @@ menuTitle: "Task 2 - Tool: Netcat"
 weight: 5
 ---
 
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Learn how to use netcat to craft http requests
+| **Task**                   | Use netcat to interact with our simple appliction by using form data and json.  We will monitor network behavior using Wireshark.
+| **Verify task completion** | If entered properly, the flask application will return data, as hightlighted below
+
 **According to the "manpage":** netcat is  a simple unix utility which reads and writes data across network connections, using TCP or UDP protocol. It is designed to be a reliable "back-end" tool  that  can  be used  directly or easily driven by other programs and scripts.  At the same time, it is a feature-rich network debugging and exploration tool, since it can create almost any  kind of  connection you would need and has several interesting built-in capabilities.  Netcat, or "nc" as the actual program is named, should have been supplied long ago as another one of those cryptic but standard Unix tools.
 
 We will be using Netcat to craft a series of HTTP calls to our flask application and observing the resulting actions.  We are using "localhost" as our destination because we are executing NC from the same Kali Linux instance that's hosting the Flask Web App, but it could just as easily use a public URL.
@@ -89,7 +95,7 @@ GET /login  HTTP/1.1
 <hit enter again>
 ```
 <details>
-  <summary><h5><b>Click here for example</b></h5></summary>
+  <summary><h5><b><li>Click here for example</b></h5></summary>
    
    ![No GET](flask_noget.png)
 
@@ -113,7 +119,7 @@ username=student&password=welcome
 ```
 
 <details>
-  <summary><h5><b>Click here for example</b></h5></summary>
+  <summary><h5><b><li>Click here for example</b></h5></summary>
    
    ![Flask Login](flask_login.png)
 
@@ -139,7 +145,7 @@ Content-Length: 32
 ```
 
 <details>
-  <summary><h5><b>Click here for example</b></h5></summary>
+  <summary><h5><b><li>Click here for example</b></h5></summary>
    
    ![Flask JSON](flask_json.png)
 

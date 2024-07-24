@@ -4,6 +4,12 @@ menuTitle: "Task 1 - Get The App"
 weight: 5
 ---
 
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Install application
+| **Task**                   | We will clone a simple, 3 tiered web application and use docker-compose to deploy it
+| **Verify task completion** | If properly executed, you should see that four containers are running
+
 For the purpose of this lab, we are going to use an application adapted from the excellent training found at [this link](https://medium.com/@kesaralive/getting-started-with-docker-compose-hands-on-project-experience-e562ab07e24c).  If you would like to dig deeper into how to create a 3 tiered application using Docker, go check it out.  We will be using Docker-Compose to bring up a pre-configured Application.
 
 {{% notice note %}}

@@ -4,6 +4,13 @@ menuTitle: "Task 4 - Example Web Attack"
 weight: 20
 ---
 
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Create a web defacement attack against our browser
+| **Task**                   | We will use a simple cross site scripting attack to deface our web page
+| **Verify task completion** | If properly executed, you will see our replacement content displayed on the feedback page
+
+
 While this is not intended as an ethical hacking course, it is useful to understand how simple attacks work.  The simple flask site that we have here doesn't have any juicy databases, chock full of Personally Identifiable Information (PII) that can be harvested, but we can set a trap for a user who logs in to check the site feedback.
 
 ## Leave Feedback
@@ -30,7 +37,7 @@ Now that we have established the fact that we can leave feedback, let's use that
 - Navigate back to **http://localhost:8000/view_feedback** and note that your feed back was recorded.
 
 <details>
-<summary><h5><b>Click here for example</b></h5></summary>
+<summary><h5><b><li>Click here for example</li></b></h5></summary>
   
   ![Cordimungus](cordimungus.png)
 

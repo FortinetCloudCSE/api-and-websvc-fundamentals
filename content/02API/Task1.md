@@ -3,7 +3,14 @@ title: "Task 1 - Preparation"
 menuTitle: "Task 1 - Preparation of the environment"
 weight: 1
 ---
-In this Task you will prepare the environment for the following tasks. You will start a simple Flask application that will be used for the following tasks.
+
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Ensure flask application is running
+| **Task**                   | You will clone and/or restart the app
+| **Verify task completion** | If properly executed, you will see debug information about the application as pictured below
+
+
 {{% notice info %}} These are the same steps which you maybe already have done in the previous Module.
 If you have the Application still running, proceed to the next task. {{% /notice %}}
 

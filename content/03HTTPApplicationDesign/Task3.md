@@ -4,6 +4,12 @@ menuTitle: "Task 3  - Explore the Back End"
 weight: 18
 ---
 
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Gain a better understanding of the Database Tier
+| **Task**                   | Use phpMyAdmin application to manage the database
+| **Verify task completion** | If completed properly, you should see changes made to the database reflected on the rendered web page.
+
 Now that we have explored the interaction between the Front End and Back End services, lets' take a look at the Database portion of the Application.  When the browser requests content from http://appexample:5000, a series of PHP scripts generate a SQL query which is sent to the Database service.  The returned data is formatted into JSON and sent to the browser for inclusion in the page content.
 
 {{% notice note %}}

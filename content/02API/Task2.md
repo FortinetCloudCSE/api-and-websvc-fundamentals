@@ -4,7 +4,13 @@ menuTitle: "Task 2 - Basic interaction with API"
 chapter: false
 weight: 2
 ---
-In this Task you will interact with the REST API that you have started in the previous task. You will use different tools to send requests to the API and review the output.
+
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Learn to use CURL and Postman to interact with our REST API
+| **Task**                   | Use CURL and postman to perform get and post actions
+| **Verify task completion** | If properly executed, you will be able to do simple math using the API
+
 
 ## Prepare the Environment
 Make sure that you are still logged in to your Kali Linux Desktop environment and the Flask application is running.

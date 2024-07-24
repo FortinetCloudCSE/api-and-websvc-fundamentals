@@ -3,6 +3,9 @@ title: "Task 1 - Setup Azure CloudShell"
 weight: 1
 ---
 
+{{% notice info %}} The below document references "student number" for a couple of the steps.  This is the first portion of the Username you recived in the initial email with your Azure credentials.  For example if your username is **web10@fortinetcloud.onmicrosoft.com** then your student number would be **web10**  {{% /notice %}}
+
+
 #### **Setup your AzureCloud Shell**
 
 * Login to Azure Cloud Portal [https://portal.azure.com/](https://portal.azure.com/) with the provided login/password
@@ -40,9 +43,9 @@ weight: 1
 
     ![cloudshell8](../images/cloudshell-08.png)
 
-* On the Select storage account screen
+* On the Select storage account screen (values in drop down)
   * choose **Internal-Training** as description
-  * resource group will be **"student number"-http101-workshop**
+  * resource group will be **"student number"-http101-workshop** 
   * storage account name will be "student number" floolowed by some random numbers and letters
   * File share will be **cloudshellshare**
   * Click **Select**

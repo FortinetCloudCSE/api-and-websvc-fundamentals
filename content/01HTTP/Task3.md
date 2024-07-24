@@ -4,6 +4,12 @@ menuTitle: "Task 3 - Tool: Browser Developer Tools"
 weight: 5
 ---
 
+|                            |    |  
+|----------------------------| ----
+| **Goal**                   | Learn to use Browser based developer tools
+| **Task**                   | We will enable Firefox' Developer tools and use them to inspect the content returned by our simple flask application
+| **Verify task completion** | You will be able to see detailed information about the application's content
+
 For this exercise, we will take a high level look at the Web Developer tool in Firefox.  For more information about this tool, you can go to the [Firefox DevTools User Docs](https://firefox-source-docs.mozilla.org/devtools-user/).  
 
 Almost all browsers have developer toolkits.  Below are some notable examples:

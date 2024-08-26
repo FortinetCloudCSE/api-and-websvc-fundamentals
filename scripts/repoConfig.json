@@ -1,0 +1,86 @@
+{
+  "repoName":"api-and-websvc-fundamentals",
+  "author":"Derrick Gooch",
+  "workshopTitle":"API and Webervice Fundamentals",
+  "themeVariant":"Xperts2024",
+  "logoBannerText":"API and Webervice Fundamentals",
+  "logoBannerSubText":"",
+  "errorLevel":"warning",
+  "googleServicesID":"G-5RZBH288ST",
+  "shortcuts": [
+  {
+    "text": "Fortinet Cloud CSE GitHub Org",
+    "URL": "https://github.com/FortinetCloudCSE",
+    "icon": "fa-tools-cap",
+    "weight":10
+  },
+  {
+    "text": "Slides and Course Material",
+    "URL": "https://github.com/FortinetCloudCSE/api-and-websvc-fundamentals/tree/main/content/slides",
+    "icon": "fa-tools-cap",
+    "weight": 1
+  },
+  {
+    "text":"OWASP Top 10",
+    "URL":"https://owasp.org/www-project-top-ten",
+    "icon":"fa-tools-cap",
+    "weight": 2
+  },
+  {
+    "text": "OWASP API Security Top 10",
+    "URL": "https://owasp.org/API-Security/editions/2023/en/0x00-header/",
+    "icon": "fa-tools-cap",
+    "weight": 3
+  },
+  {
+    "text": "W3Schools",
+    "URL": "https://www.w3schools.com/",
+    "icon": "fa-tools-cap",
+    "weight": 4
+  },
+  {
+    "text": "Swagger API Documentation",
+    "URL": "https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/",
+    "icon": "fa-tools-cap",
+    "weight": 5
+  },
+  {
+    "text": "HTTP Authentication",
+    "URL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication",
+    "icon": "fa-tools-cap",
+    "weight": 6
+  },
+  {
+    "text": "API Authentication",
+    "URL": "https://www.postman.com/api-platform/api-authentication/",
+    "icon": "fa-tools-cap",
+    "weight": 7
+  },
+  {
+    "text": "Portswigger Security",
+    "URL": "https://portswigger.net/web-security",
+    "icon": "fa-tools-cap",
+    "weight": 8
+  },
+  {
+    "text": "Wireshark",
+    "URL": "https://www.wireshark.org/",
+    "icon": "fa-tools",
+    "weight": 11
+  },
+  {
+    "text": "BurpSuite",
+    "URL": "https://portswigger.net/burp",
+    "icon": "fa-tools",
+    "weight": 12
+  },
+  {
+    "text": "Postman",
+    "URL": "https://www.postman.com/",
+    "icon": "fa-tools",
+    "weight": 13
+  }
+  ]
+}
+
+

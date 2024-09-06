@@ -38,6 +38,8 @@ Postman is a collaborative platform used for developing, testing, and documentin
 ```bash
 Postman
 ```
+If for some reason this doesn't come up, you can search for the Postman application by clicking on the Dragon icon at the top left side of the Kali Desktop.
+
 2. A new window will open which will look like this:
 ![img.png](img.png)
 

@@ -40,6 +40,7 @@ Postman
 
 ![img_8.png](img_8.png)
 7. Spend a moment exploring the Queries.
+
 8. In the query editor on the right, start by writing a simple query to fetch the name and date of the next SpaceX launch. Enter the following query:
 ```graphql
 {

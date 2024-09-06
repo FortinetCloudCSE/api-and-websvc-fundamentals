@@ -23,7 +23,7 @@ At first glance, everything seems to be operating properly.  We can see both the
 
 - Open Firefox from Kali, and "right click" on the window.  Select **Inspect (Q)
 - Now browse to the front end service ```http://10.0.0.15:3000```
-- Click on the **Network** tab.  Notice that there is a GET that seems to have failed to **http://localhost:5000**
+- Click on the **Console** tab.  Notice that we see a "Cross-Origin Request Blocked" message  regarding **http://localhost:5000**
 
 ![problem](problem.png)
 

@@ -8,7 +8,7 @@ weight: 5
 
 Each Student will have their own environment for the lab. The following diagram provides an overview of the Student environment.
 
-   ![setup](/images/env_diagram.png)
+   ![setup](env_diagram.png)
 
 ## Provisioning the Azure environment (40min)
 

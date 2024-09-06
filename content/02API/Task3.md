@@ -30,7 +30,14 @@ Postman
 5. To create a new GraphQL request, select **New** in the top left and then **GraphQL**
 ![img_7.png](img_7.png)
 
-6. As URL, enter `https://spacex-production.up.railway.app/`. Postman will automatically detect that this is a GraphQL API and populate the Queries.
+6. As URL, enter `https://spacex-production.up.railway.app/`. Postman will automatically detect that this is a GraphQL API and populate the Queries.  
+
+**Click below the url to open the list of queries**
+
+![drop-query.png](drop-query.png)
+
+**It should look something like:**
+
 ![img_8.png](img_8.png)
 7. Spend a moment exploring the Queries.
 8. In the query editor on the right, start by writing a simple query to fetch the name and date of the next SpaceX launch. Enter the following query:
@@ -42,7 +49,8 @@ Postman
   }
 }
 ```
-9. Click on **Query** and review the output.
+9. Click on the **Blue Query** button to the right of the URL.   You may need to click on the up "**^**" symbol to on the Response line in order to view the output.
+
 ![img_9.png](img_9.png)
 10. Let's continue by getting more data and details by including the rocket and the launch site. Enter the following query:
 ```graphql

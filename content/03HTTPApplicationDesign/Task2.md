@@ -52,7 +52,7 @@ This bit of "script" code is telling the web client to fetch the data at **http:
 <details>
   <summary><h5><b><li>Click here for answer</b></h5></summary>
    
-   **If our client were on the same local machine as our application, this would work fine.  Since our client is a different host, when it recievces the script to fetch data from http://localhost:5000 it queries itself, and of course doesn't find anything.**
+   **If our client were on the same local machine as our application, this would work fine.  Since our client is a different host, when it recievces the script to fetch data from http://localhost:5000 , Firefox' CORS policy is violated.  Even if the CORS policy did not catch this, the reference to localhost would cause us to search on the local machine, and of course wouldn't find anything.**
 
 </details>
 
@@ -63,7 +63,6 @@ This bit of "script" code is telling the web client to fetch the data at **http:
    
    **In this case, we need to change the script to reference a valid url, which is reachable by our client (or any external client).**  
    
-   - We could change the url to read ```http://10.0.0.15:5000```.  This would work fine as long as our clients are on the same network as the service.
    - In a production environment, more than likely our clients will be on different networks than our services.  We may also want to distribute the services regionally or even globally.  This is where we would use a domain name.  In our case, we may want to use something like```http://appexample:5000```.
 
 </details>

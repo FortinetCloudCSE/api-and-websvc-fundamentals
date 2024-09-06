@@ -54,7 +54,7 @@ more simple_flask_auth/templates/view_feedback.html
 
 ### Network Inspector
 
-The network tab gives us a lot of information about traffic to and from the appliation itself.  This can be quite useful for viewing how the application is actually operating at layer 7.
+The network tab gives us a lot of information about traffic to and from the application itself.  This can be quite useful for viewing how the application is actually operating at layer 7.
 
 - Click on The "Network" tab in the Web Devloper Tool section at the bottom of the page.
 

@@ -25,12 +25,17 @@ variable "offer" {
 
 variable "sku" {
   type    = string
-  default = "kali-2023-4"
+  default = "kali-2024-2"
 }
 
 variable "vmversion" {
   type    = string
-  default = "2023.4.0"
+  default = "2024.2.0"
+}
+
+variable "kali_vm_size" {
+  type    = string
+  default = "Standard_D4ads_v5"
 }
 
 variable "vm_size" {

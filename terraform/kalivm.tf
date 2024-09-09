@@ -75,7 +75,7 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
   name                  = "kali-${var.username}"
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   location              = data.azurerm_resource_group.resourcegroup.location
-  size                  = var.vm_size
+  size                  = var.kali_vm_size
   admin_username        = var.admin_username
   admin_password        = var.admin_password
   disable_password_authentication = false
@@ -85,7 +85,7 @@ resource "azurerm_linux_virtual_machine" "kalivm" {
 
   os_disk {
     caching              = "ReadWrite"
-    storage_account_type = "Standard_LRS"
+    storage_account_type = "Premium_LRS"
   }
 
   plan {

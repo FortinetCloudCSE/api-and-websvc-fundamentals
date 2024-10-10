@@ -10,11 +10,13 @@ weight: 5
 Provision your Azure Environment, enter your Email address and click _Provision_
 {{< launchdemoform labdefinition="web-101" >}}
 
-{{< notice warning >}} After submitting, this page will return with a blank email address box and no other indications.
+{{< notice warning >}}
 
 Provisioning can take several minutes.
 
-\*\*\* __PLEASE DO NOT SUBMIT MULTIPLE TIMES__ \*\*\*  {{< /notice >}}
+\*\*\* __PLEASE DO NOT SUBMIT MULTIPLE TIMES__ \*\*\*  
+
+{{< /notice >}}
 
 When provisioning is complete, one of the following will happen.
 

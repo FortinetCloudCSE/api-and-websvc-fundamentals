@@ -4,11 +4,6 @@ menuTitle: "Getting Started"
 weight: 5
 ---
 
-## Student Setup Diagram
-
-Each Student will have their own environment for the lab. The following diagram provides an overview of the Student environment.
-
-   ![setup](env_diagram.png)
 
 ## Provisioning the Azure environment (40min)
 
@@ -34,3 +29,8 @@ Tasks
 * Run Terraform
 * Verify Terraform
 
+## Student Setup Diagram
+
+Each Student will have their own environment for the lab. The following diagram provides an overview of the Student environment.
+
+   ![setup](env_diagram.png)

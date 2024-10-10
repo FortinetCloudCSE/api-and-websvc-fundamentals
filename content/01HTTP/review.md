@@ -1,6 +1,6 @@
 ---
 title: "HTTP review"
-menuTitle: "HTTP review"
+linktitle: "HTTP review"
 weight: 50
 ---
 

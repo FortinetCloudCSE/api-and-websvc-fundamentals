@@ -1,6 +1,6 @@
 ---
 title: "Modern Application review"
-menuTitle: "Modern Application review"
+linktitle: "Modern Application review"
 weight: 50
 ---
 

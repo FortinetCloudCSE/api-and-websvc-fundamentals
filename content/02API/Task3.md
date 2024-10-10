@@ -1,6 +1,6 @@
 ---
 title: "Task 3 - Explore different API types/flavours"
-menuTitle: "Task 3 - Explore different APIs"
+linktitle: "Task 3 - Explore different APIs"
 chapter: false
 weight: 3
 ---

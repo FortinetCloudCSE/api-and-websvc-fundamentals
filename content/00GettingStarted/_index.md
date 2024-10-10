@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-menuTitle: "Getting Started"
+linktitle: "Getting Started"
 weight: 5
 ---
 

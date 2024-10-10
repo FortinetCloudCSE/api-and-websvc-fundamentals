@@ -1,6 +1,6 @@
 ---
 title: "API review"
-menuTitle: "API review"
+linktitle: "API review"
 weight: 50
 ---
 

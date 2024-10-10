@@ -4,7 +4,7 @@
   "workshopTitle":"API and Webervice Fundamentals",
   "themeVariant":"Xperts2024",
   "logoBannerText":"Web Services 101 & 102",
-  "logoBannerSubText":"API and Webervice Fundamentals",
+  "logoBannerSubText":"API and Webservice Fundamentals",
   "errorLevel":"warning",
   "googleServicesID":"G-5RZBH288ST",
   "shortcuts": [
@@ -66,7 +66,7 @@
   {
     "text": "Wireshark",
     "URL": "https://www.wireshark.org/",
-    "icon": "fa-lightbulb",
+    "icon": "fa-tools",
     "weight": 11
   },
   {

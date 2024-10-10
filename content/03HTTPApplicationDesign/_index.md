@@ -1,7 +1,7 @@
 ---
 title: "Module 3: Architecture of Modern HTTP-Based Applications"
 chapter: false
-menuTitle: "Module 3: HTTP-Based Modern Applications"
+linktitle: "Module 3: HTTP-Based Modern Applications"
 weight: 20
 ---
 

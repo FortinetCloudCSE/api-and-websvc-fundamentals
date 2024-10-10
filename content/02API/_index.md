@@ -1,7 +1,7 @@
 ---
 title: "Module 2: HTTP API Fundamentals"
 chapter: false
-menuTitle: "Module 2: HTTP API Fundamentals"
+linktitle: "Module 2: HTTP API Fundamentals"
 weight: 20
 ---
 

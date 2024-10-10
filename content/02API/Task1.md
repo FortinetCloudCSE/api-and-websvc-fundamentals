@@ -1,6 +1,6 @@
 ---
 title: "Task 1 - Preparation"
-menuTitle: "Task 1 - Preparation of the environment"
+linktitle: "Task 1 - Preparation of the environment"
 weight: 1
 ---
 

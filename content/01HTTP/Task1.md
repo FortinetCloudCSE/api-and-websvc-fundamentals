@@ -1,6 +1,6 @@
 ---
 title: "Task 1 - Start Flask Application"
-menuTitle: "Task 1 - Start Flask Application"
+linktitle: "Task 1 - Start Flask Application"
 weight: 1
 ---
 

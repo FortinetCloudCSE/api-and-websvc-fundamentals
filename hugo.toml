@@ -88,7 +88,7 @@ enableEmoji = true
   
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
   
-  logoBannerSubText = "API and Webervice Fundamentals"
+  logoBannerSubText = "API and Webservice Fundamentals"
   
 
   # Shows a checkmark for visited pages on the menu
@@ -233,7 +233,7 @@ url = "https://github.com/FortinetCloudCSE"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-lightbulb'></i> Wireshark"
+name = "<i class='fas fa-tools'></i> Wireshark"
 url = "https://www.wireshark.org/"
 weight = 11
 

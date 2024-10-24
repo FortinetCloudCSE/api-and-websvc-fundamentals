@@ -24,7 +24,7 @@ We will cover topics like OAuth and JWT tokens, API security, and API testing.
 ![img_24.png](img_24.png)
 5. Click on an endpoint to see more details about it. For example, click on the **GET /pet/findByStatus** endpoint.
 ![img_25.png](img_25.png)
-6. You will see a description of the endpoint, the parameters it accepts, and the responses it returns. You can also try out the endpoint by clicking on the *Try it out* button.
+6. You will see a description of the endpoint, the parameters it accepts, and the responses it returns. You can also try out the endpoint by clicking on the **Try it out** button.
 ![img_26.png](img_26.png)
 7. After executing the call, review the response directly in the Swagger UI. The response section will show the URL, the request parameters, the server response including the status code, response body, and headers.
 ![img_27.png](img_27.png)

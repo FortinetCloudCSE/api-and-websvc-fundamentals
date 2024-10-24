@@ -20,6 +20,10 @@ If you would like to know more about PHP, [W3 schools](https://www.w3schools.com
 ## Login to phpMyAdmin
 This is a free tool written in PHP intended to provide a web GUI for the administration of MySQL Databases.
 - From the Kali Desktop, open Firefox and navigate to ```http://appexample:8080```
+{{< notice warning >}}
+If ```http://appexample:8080``` isn't resolving for you, go back and check the hints for the last task around hosts file editing.
+{{< /notice >}}
+
 - You will be presented with a login screen.  Enter ```todo_admin``` as the Username and enter ```password``` as the Password.  Click login.
 
 ![phpmyadmin login](phpmyadmin_login.png)

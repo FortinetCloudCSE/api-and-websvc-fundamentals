@@ -185,7 +185,7 @@ To solve the task, the following query using a ID can be used:
 3. You will see the WSDL document, which describes the methods available in the SOAP API and their parameters.
 
 ### Interacting with SOAP API using Postman
-1. Open the Postman application by typing the following command in a terminal window. If Postman is still open from the pervious task, you can skip step 1-4
+1. Open the Postman application. If Postman is still open from the previous task, you can skip step 1-4
 
 2. A new window will open which will look like this:
 ![img.png](img.png)

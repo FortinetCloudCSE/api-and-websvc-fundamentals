@@ -105,7 +105,7 @@ GET /login  HTTP/1.1
 
 ## Form Data
 
-The FormData interface provides a way to construct a set of key/value pairs representing form fields and their values. Formdata is useful if the client does not suppor Javascript, or in a situation where it is desireable to send binary data without text encoding.  For This step, we are going to set the "Content-Type" to **x-www-form-urlencoded** and then add key/values for username and password.
+The FormData interface provides a way to construct a set of key/value pairs representing form fields and their values. Formdata is useful if the client does not support Javascript, or in a situation where it is desireable to send binary data without text encoding.  For This step, we are going to set the "Content-Type" to **x-www-form-urlencoded** and then add key/values for username and password.
 
 ```
 nc localhost 8000 -vvv

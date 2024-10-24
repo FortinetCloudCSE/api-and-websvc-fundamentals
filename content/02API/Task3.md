@@ -17,18 +17,22 @@ In the previous task you have already gained some experience with a REST API. In
 
 ## Interacting with GraphQL API
 1. Open the Postman application by typing the following command in a terminal window:
+
 ```bash
 Postman
 ```
-2. A new window will open which will look like this:
+
+3. A new window will open which will look like this:
 ![img.png](img.png)
 
 3. select **lightweight API client** below the Account creation form.
 ![img_1.png](img_1.png)
 
 4. A empty Workspace will open.
-5. To create a new GraphQL request, select **New** in the top left and then **GraphQL**
-![img_7.png](img_7.png)
+
+6. To create a new GraphQL request, select **File...New** in the top left and then **GraphQL**
+
+6. ![img_7.png](img_7.png)
 
 6. As URL, enter `https://spacex-production.up.railway.app/`. Postman will automatically detect that this is a GraphQL API and populate the Queries.  
 
@@ -39,9 +43,11 @@ Postman
 **It should look something like:**
 
 ![img_8.png](img_8.png)
-7. Spend a moment exploring the Queries.
+
+8. Spend a moment exploring the Queries.
 
 8. In the query editor on the right, start by writing a simple query to fetch the name and date of the next SpaceX launch. Enter the following query:
+
 ```graphql
 {
   launchNext {
@@ -50,10 +56,12 @@ Postman
   }
 }
 ```
-9. Click on the **Blue Query** button to the right of the URL.   You may need to click on the up "**^**" symbol to on the Response line in order to view the output.
+
+10. Click on the **Blue Query** button to the right of the URL.   You may need to click on the up "**^**" symbol to on the Response line in order to view the output.
 
 ![img_9.png](img_9.png)
-10. Let's continue by getting more data and details by including the rocket and the launch site. Enter the following query:
+
+11. Let's continue by getting more data and details by including the rocket and the launch site. Enter the following query:
 ```graphql
 {
   launchNext {
@@ -70,9 +78,11 @@ Postman
   }
 }
 ```
-11. Click on **Query** and review the output.
+
+12. Click on **Query** and review the output.
 ![img_10.png](img_10.png)
-12. GraphQL queries all the usage of Arguments/Variables within Queries. Lets update the previous query by adding a Argument. Enter the following query:
+
+13. GraphQL queries all the usage of Arguments/Variables within Queries. Lets update the previous query by adding an Argument. Enter the following query:
 ```graphql
 {
   launch(id: "6243aec2af52800c6e91925d") {
@@ -89,9 +99,11 @@ Postman
 }
 ```
 ![img_11.png](img_11.png)
-13. Click on **Query** and review the output.
+
+14. Click on **Query** and review the output.
 
 14. Lets advance our GraphQL skills and adjust the queries using variables. Enter the following query:
+
 ```graphql
 query LaunchDetails($id: ID!) {
   launch(id: $id) {
@@ -108,6 +120,7 @@ query LaunchDetails($id: ID!) {
 }
 ```
 15. Click on **Variables** and enter the following JSON:
+
 ```json
 {
   "id": "6243aec2af52800c6e91925d"

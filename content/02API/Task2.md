@@ -41,9 +41,11 @@ Postman
 If for some reason this doesn't come up, you can search for the Postman application by clicking on the Dragon icon at the top left side of the Kali Desktop.
 
 2. A new window will open which will look like this:
+    - Click on **Continue without an account**
 ![img.png](img.png)
 
-3. select `lightweight API client` below the Account creation form.
+3. A new window will appear:
+    - Click **Open Lightweight API Client**
 ![img_1.png](img_1.png)
 
 4. A empty Workspace will open.
@@ -57,7 +59,7 @@ If for some reason this doesn't come up, you can search for the Postman applicat
 
 ## Interact with REST API using HTTP Post
 HTTP POST is not another tool, it is a different communication method used by APIs to send data to the server. You can use e.g. **curl** or **Postman** to send a POST request to the API. In this task you are free to use the tool of your choice.
-1. Use **curl** or **Postman** to send a POST request to the API endpoint `http://localhost:8000/api/v1/calculate` and review the output. In the Body, add empty JSON object **{}** and select **JSON** in the dropdown.
+1. Use **curl** or **Postman** to send a POST request to the API endpoint `http://localhost:8000/api/v1/calculate` and review the output. In the Body,click on **raw** add empty JSON object **{}** and select **JSON** in the dropdown.
 ![img_5.png](img_5.png)
 If you use curl, a http header needs to be added to the request:
 ```bash

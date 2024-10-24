@@ -1,6 +1,6 @@
 ---
 title: "Task 4 - Stored Cross Site Scripting (XSS) Example Attack"
-menuTitle: "Task 4 - Example Web Attack"
+linktitle: "Task 4 - Example Web Attack"
 weight: 20
 ---
 

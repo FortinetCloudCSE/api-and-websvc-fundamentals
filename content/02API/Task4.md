@@ -1,6 +1,6 @@
 ---
 title: "Task 4 - Advanced API handling"
-menuTitle: "Task 4 - Advanced API handling"
+linktitle: "Task 4 - Advanced API handling"
 chapter: false
 weight: 4
 ---

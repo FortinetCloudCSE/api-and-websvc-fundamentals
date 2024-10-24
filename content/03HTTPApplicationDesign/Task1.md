@@ -1,6 +1,6 @@
 ---
 title: "Task 1 - Get The App"
-menuTitle: "Task 1 - Get The App"
+linktitle: "Task 1 - Get The App"
 weight: 5
 ---
 

@@ -1,25 +1,22 @@
 ---
 title: "Getting Started"
-menuTitle: "Getting Started"
+linktitle: "Getting Started"
 weight: 5
 ---
 
-## Student Setup Diagram
-
-Each Student will have their own environment for the lab. The following diagram provides an overview of the Student environment.
-
-   ![setup](env_diagram.png)
 
 ## Provisioning the Azure environment (40min)
 
 Provision your Azure Environment, enter your Email address and click _Provision_
 {{< launchdemoform labdefinition="web-101" >}}
 
-{{< notice warning >}} After submitting, this page will return with a blank email address box and no other indications.
+{{< notice warning >}}
 
 Provisioning can take several minutes.
 
-\*\*\* __PLEASE DO NOT SUBMIT MULTIPLE TIMES__ \*\*\*  {{< /notice >}}
+\*\*\* __PLEASE DO NOT SUBMIT MULTIPLE TIMES__ \*\*\*  
+
+{{< /notice >}}
 
 When provisioning is complete, one of the following will happen.
 
@@ -34,3 +31,8 @@ Tasks
 * Run Terraform
 * Verify Terraform
 
+## Student Setup Diagram
+
+Each Student will have their own environment for the lab. The following diagram provides an overview of the Student environment.
+
+   ![setup](env_diagram.png)

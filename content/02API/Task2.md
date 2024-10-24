@@ -1,6 +1,6 @@
 ---
 title: "Task 2 - Basic interaction with API"
-menuTitle: "Task 2 - Basic interaction with API"
+linktitle: "Task 2 - Basic interaction with API"
 chapter: false
 weight: 2
 ---

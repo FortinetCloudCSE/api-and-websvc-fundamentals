@@ -63,8 +63,8 @@ enableEmoji = true
     # - set the following `style` to a predefined style name
     # - remove the `@import` of the self-defined chroma stylesheet from your CSS files
     #   (here eg.: theme-relearn-light.css / theme-relearn-dark.css)
-    noClasses = false
-    style = "native"
+    noClasses = true
+    style = "catppuccin-latte"
 
   [markup.goldmark.renderer]
     # activated for this showcase to use HTML and JavaScript; decide on your own needs;
@@ -84,9 +84,11 @@ enableEmoji = true
   #Optional, By Default, the logo banner will match the Text from themeVariant Above
   # If you would like to change the primary logo banner text, uncommenet logoBannerText Parameter and set to desired text.
   
-  logoBannerText = "API and Webervice Fundamentals"
+  logoBannerText = "Web Services 101 & 102"
   
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
+  
+  logoBannerSubText = "API and Webservice Fundamentals"
   
 
   # Shows a checkmark for visited pages on the menu
@@ -186,49 +188,49 @@ enableEmoji = true
 
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> Fortinet Cloud CSE GitHub Org"
-url = "https://github.com/FortinetCloudCSE"
-weight = 10
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> Slides and Course Material"
+name = "<i class='fas fa-graduation-cap'></i> Slides and Course Material"
 url = "https://github.com/FortinetCloudCSE/api-and-websvc-fundamentals/tree/main/content/slides"
 weight = 1
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> OWASP Top 10"
+name = "<i class='fas fa-lightbulb'></i> OWASP Top 10"
 url = "https://owasp.org/www-project-top-ten"
 weight = 2
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> OWASP API Security Top 10"
+name = "<i class='fas fa-lightbulb'></i> OWASP API Security Top 10"
 url = "https://owasp.org/API-Security/editions/2023/en/0x00-header/"
 weight = 3
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> W3Schools"
+name = "<i class='fas fa-lightbulb'></i> W3Schools"
 url = "https://www.w3schools.com/"
 weight = 4
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> Swagger API Documentation"
+name = "<i class='fas fa-lightbulb'></i> Swagger API Documentation"
 url = "https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/"
 weight = 5
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> HTTP Authentication"
+name = "<i class='fas fa-lightbulb'></i> HTTP Authentication"
 url = "https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication"
 weight = 6
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> API Authentication"
+name = "<i class='fas fa-lightbulb'></i> API Authentication"
 url = "https://www.postman.com/api-platform/api-authentication/"
 weight = 7
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> Portswigger Security"
+name = "<i class='fas fa-lightbulb'></i> Portswigger Security"
 url = "https://portswigger.net/web-security"
 weight = 8
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-lightbulb'></i> Fortinet Cloud CSE GitHub Org"
+url = "https://github.com/FortinetCloudCSE"
+weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tools'></i> Wireshark"

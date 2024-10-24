@@ -1,7 +1,7 @@
 ---
 title: "Module 1: HTTP Fundamentals"
 chapter: false
-menuTitle: "Module 1: HTTP Fundamentals"
+linktitle: "Module 1: HTTP Fundamentals"
 weight: 10
 ---
 

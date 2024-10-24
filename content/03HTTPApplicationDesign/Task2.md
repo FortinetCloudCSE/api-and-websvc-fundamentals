@@ -1,6 +1,6 @@
 ---
 title: "Task 2 - Fix the Front End"
-menuTitle: "Task 2  - Fix the Front End"
+linktitle: "Task 2  - Fix the Front End"
 weight: 15
 ---
 

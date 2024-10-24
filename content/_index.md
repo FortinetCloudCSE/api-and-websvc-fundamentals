@@ -1,9 +1,11 @@
 ---
-title: "API and Web Service Fundamentals"
-menuTitle: "NSEXperts 2024"
+title: "Fortinet XPerts 2024"
 weight: 1
 archetype: home
 ---
+
+{{< Xperts24Banner line1="Web Services &amp; App Security 101 &amp; 102" line2="HTTP &amp; API" line3="Fundamentals &amp; Architecture" >}}
+
 
 ### Welcome!
 

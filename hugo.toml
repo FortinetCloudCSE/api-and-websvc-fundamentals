@@ -23,7 +23,7 @@ uglyURLs = true     # true -> basic/index.html -> basic.html
 # use this theme ;-)
 theme = ["hugo-theme-relearn"]
 
-title = "API and Webervice Fundamentals"
+title = "Web Services 101 API and Web Service Fundamentals"
 
 # We disable this for testing the exampleSite; you must do so too
 # if you want to use the themes parameter disableGeneratorVersion=true;
@@ -88,7 +88,7 @@ enableEmoji = true
   
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
   
-  logoBannerSubText = "API and Webservice Fundamentals"
+  logoBannerSubText = "API and Web Service Fundamentals"
   
 
   # Optional parameter to set Marketing/Event code per repo from repoConfig.json

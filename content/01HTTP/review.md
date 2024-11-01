@@ -19,24 +19,20 @@ Hopefully this engendered a desire on the part of the student to use these tools
 
 1. What is a cookie?
 
-<details>
-<summary><h5><b><li>Click here for answer</li></b></h5></summary>
+    {{% expand title="Click here for Answer" %}}
 A small piece of data sent from a server to a user's web browser
-</details>
+    {{% /expand %}}
 
 2. What can you learn from developer tools in the browser?
 
-<details>
-<summary><h5><b><li>Click here for answer</li></b></h5></summary>
- - request and response headers
+    {{% expand title="Click here for Answer" %}} - request and response headers
  - scripts passed to the browser from the server
  - cookies and other content
  - response codes
-</details>
+    {{% /expand %}}
 
-3. Web attacks are difficult to perpetrate and you need to be an inveterate hacker to attempt it (True or False)
+3. Web attacks are difficult to perpetrate,m and you need to be an inveterate hacker to attempt it (True or False)
 
-<details>
-<summary><h5><b><li>Click here for answer</li></b></h5></summary>
+    {{% expand title="Click here for Answer" %}}
 **FALSE** - The attack in this lab is very simple, but very effective.  This should highlight the need to protect web applications with a purpose built Web Application Firewall (WAF)
-</details>
+    {{% /expand %}}

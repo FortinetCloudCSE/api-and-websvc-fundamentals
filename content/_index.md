@@ -10,7 +10,7 @@ archetype: home
 ### Welcome!
 
 
-This course will help students learn the Fundamentals of Web Applications.  This will include a study of HTTP, APIs and Application Architectures.  Students will perform guided labs, designed to augment the knowlege gained from the lecture portion of the class. 
+This course will help students learn the Fundamentals of Web Applications.  This will include a study of HTTP, APIs and Application Architectures.  Students will perform guided labs, designed to augment the knowledge gained from the lecture portion of the class. 
 
 
 

@@ -31,32 +31,32 @@ Containers simplify the development and delivery of distributed applications. Th
 - Paste in ```git clone https://github.com/fortidg/docker-compose-101.git``` 
 - Right Click and select **Paste Clipboard** to put the text into the Kali terminal
 
-![clone-repo1](clone-repo.png)
+    ![clone-repo1](clone-repo.png)
 
 - You may have to type ctrl+shift+alt again to close the clipboard.
 - Hit enter to clone the repo
 - Go to the docker-compose-101 folder by typing ```cd docker-compose-101```
 
 
-![clone-repo2](clone-repo2.png)
+    ![clone-repo2](clone-repo2.png)
 
 
 ## Start the Application
 
 - At the prompt, type ```sudo docker-compose up```.
-- The application will take a few minutes to come up and download all of the required packages.  Once it is complete you should see something along the below lines, indicating that the sql server is ready.  
+- The application will take a few minutes to come up and download all required packages.  Once it is complete you should see something along the below lines, indicating that the sql server is ready.  
 
-```
-database_1    | 2024-07-09T16:10:24.495277Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '9.0.0'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-
-```
+    ```
+    database_1    | 2024-07-09T16:10:24.495277Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '9.0.0'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+    
+    ```
 
 - Open a second terminal ```ssh labuser@10.0.0.15``` enter password ```S3cur3P4ssw0rd123!```
 - Let's see what containers are running, by issuing the ```sudo docker ps -a``` command.
 - You will see a number of apps open.
 - Take note of the port numbers for the apps
 
-![check docker](check-docker.png)
+    ![check docker](check-docker.png)
 
 
 

@@ -6,6 +6,7 @@
   "logoBannerText":"Web Services 101 & 102",
   "logoBannerSubText":"API and Web Service Fundamentals",
   "errorLevel":"warning",
+  "provisionApiBaseUrl": "https://func-cse-lab-provisioning.azurewebsites.net",
   "googleServicesID":"G-5RZBH288ST",
   "marketingCode":"CloudCSE-Xperts2024",
   "shortcuts": [
